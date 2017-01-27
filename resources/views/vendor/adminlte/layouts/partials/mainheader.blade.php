@@ -4,9 +4,9 @@
     <!-- Logo -->
     <a href="{{ url('/home') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>A</b>LT</span>
+        <span class="logo-mini"><b>K</b>MA</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>LTE Laravel </span>
+        <span class="logo-lg"><b>Kerigan</b>Media</span>
     </a>
 
     <!-- Header Navbar -->
@@ -127,21 +127,21 @@
                                 <img src="{{ Gravatar::get($user->email) }}" class="img-circle" alt="User Image" />
                                 <p>
                                     {{ Auth::user()->name }}
-                                    <small>{{ trans('adminlte_lang::message.login') }} Nov. 2012</small>
+                                    <small>*Title will go here*</small>
                                 </p>
                             </li>
                             <!-- Menu Body -->
-                            <li class="user-body">
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">{{ trans('adminlte_lang::message.followers') }}</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">{{ trans('adminlte_lang::message.sales') }}</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">{{ trans('adminlte_lang::message.friends') }}</a>
-                                </div>
-                            </li>
+                            {{--<li class="user-body">--}}
+                                {{--<div class="col-xs-4 text-center">--}}
+                                    {{--<a href="#">{{ trans('adminlte_lang::message.followers') }}</a>--}}
+                                {{--</div>--}}
+                                {{--<div class="col-xs-4 text-center">--}}
+                                    {{--<a href="#">{{ trans('adminlte_lang::message.sales') }}</a>--}}
+                                {{--</div>--}}
+                                {{--<div class="col-xs-4 text-center">--}}
+                                    {{--<a href="#">{{ trans('adminlte_lang::message.friends') }}</a>--}}
+                                {{--</div>--}}
+                            {{--</li>--}}
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
