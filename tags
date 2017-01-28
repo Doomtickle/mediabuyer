@@ -1431,6 +1431,7 @@ elements	public/plugins/ckeditor/ckeditor.js	/^t.$block),p={elements:{input:k,te
 elementsHaveSameNonClassAttributes	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  function elementsHaveSameNonClassAttributes(el1, el2) {$/;"	f
 em	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^        "em":     "i",$/;"	p
 embed	public/plugins/ckeditor/ckeditor.js	/^details:1,datagrid:1,datalist:1},r={a:1,blockquote:1,embed:1,hr:1,img:1,li:1,object:1,ol:1,table:1,td:1,tr:1,th:1,ul:1,dl:1,dt:1,dd:1,form:1,audio:1,video:1},G=\/\\s*(?:;\\s*|$)\/,H=\/#\\((.+?)\\)\/g,K=CKEDITOR.dom.walker.bookmark(0,1),R=CKEDITOR.dom.walker.whitespaces(1);CKEDITOR.style=function(a,b){if("string"==typeof a.type)return new CKEDITOR.style.customHandlers[a.type](a);var c=a.attributes;c&&c.style&&(a.styles=CKEDITOR.tools.extend({},a.styles,CKEDITOR.tools.parseCssText(c.style)),delete c.style);$/;"	p
+end	database/factories/ModelFactory.php	/^    $end = Carbon::createFromFormat('Y-m-d H:i:s', $start)->addDays(25);$/;"	v
 end	public/plugins/daterangepicker/daterangepicker.js	/^            var end = moment(this.container.find('input[name="daterangepicker_end"]').val(), this.locale.format);$/;"	v
 eol	public/plugins/ckeditor/ckeditor.js	/^CKEDITOR.POSITION_BEFORE_END),f=a(f).lastForward(),g=!0);f||(f=e);f.is("table")?(d.setStartAt(f,CKEDITOR.POSITION_BEFORE_START),d.collapse(!0),f.remove()):(f.is({tbody:1,thead:1,tfoot:1})&&(f=b(f,"tr",g)),f.is("tr")&&(f=b(f,f.getParent().is("thead")?"th":"td",g)),(e=f.getBogus())&&e.remove(),d.moveToPosition(f,g?CKEDITOR.POSITION_AFTER_START:CKEDITOR.POSITION_BEFORE_END))}}(),F={eol:{detect:function(a,b){var c=a.range,d=c.clone(),e=c.clone(),f=new CKEDITOR.dom.elementPath(c.startContainer,b),g=new CKEDITOR.dom.elementPath(c.endContainer,$/;"	p
 errors	public/plugins/flot/jquery.flot.errorbars.js	/^        var errors = series.points.errorbars;$/;"	v
@@ -1986,6 +1987,7 @@ password	database/factories/ModelFactory.php	/^        'password' => $password ?
 password	database/factories/ModelFactory.php	/^    static $password;$/;"	v
 patchValueProperty	public/plugins/input-mask/jquery.inputmask.js	/^            function patchValueProperty(npt) {$/;"	f
 plan	app/Http/Controllers/MediaPlansController.php	/^        $plan = $mediaPlan;$/;"	v
+plan	app/Http/Controllers/MediaPlansController.php	/^        $plan = MediaPlan::with('client')->find($id);$/;"	v
 plot.destroy	public/plugins/flot/jquery.flot.js	/^        plot.destroy = function () {$/;"	f
 plot.getAxes	public/plugins/flot/jquery.flot.js	/^        plot.getAxes = function () {$/;"	f
 plot.getCanvas	public/plugins/flot/jquery.flot.js	/^        plot.getCanvas = function() { return surface.element; };$/;"	f
@@ -2133,7 +2135,7 @@ shouldIgnoreBoxSizingBorderBox	public/plugins/bootstrap-wysihtml5/bootstrap3-wys
 shouldIgnoreURL	public/plugins/pace/pace.js	/^  shouldIgnoreURL = function(url) {$/;"	f
 shouldTrack	public/plugins/pace/pace.js	/^  shouldTrack = function(method) {$/;"	f
 show	app/Http/Controllers/ClientsController.php	/^    public function show($clientName)$/;"	f
-show	app/Http/Controllers/MediaPlansController.php	/^    public function show(MediaPlan $mediaPlan)$/;"	f
+show	app/Http/Controllers/MediaPlansController.php	/^    public function show($id)$/;"	f
 showLinkRequestForm	app/Http/Controllers/Auth/ForgotPasswordController.php	/^    public function showLinkRequestForm()$/;"	f
 showLoginForm	app/Http/Controllers/Auth/LoginController.php	/^    public function showLoginForm()$/;"	f
 showRegistrationForm	app/Http/Controllers/Auth/RegisterController.php	/^    public function showRegistrationForm()$/;"	f
@@ -2160,6 +2162,7 @@ splitNodeAt	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  f
 sql_details	public/plugins/datatables/extensions/Scroller/examples/data/ssp.php	/^$sql_details = array($/;"	v
 square	public/plugins/flot/jquery.flot.symbol.js	/^            square: function (ctx, x, y, radius, shadow) {$/;"	m
 standardAnimationOption	public/plugins/jQueryUI/jquery-ui.js	/^function standardAnimationOption( option ) {$/;"	f
+start	database/factories/ModelFactory.php	/^    $start = Carbon::createFromTimeStamp($faker->dateTimeBetween('-30 days', '+30 days')->getTimestamp());$/;"	v
 start	public/plugins/daterangepicker/daterangepicker.js	/^            var start = moment(this.container.find('input[name="daterangepicker_start"]').val(), this.locale.format);$/;"	v
 start	public/plugins/daterangepicker/daterangepicker.js	/^        var start, end, range;$/;"	v
 state	public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js	/^b={"interface":a("interface"),"extends":a("extends"),constructor:a("constructor"),"public":a("public"),"private":a("private"),"protected":a("protected"),"static":a("static"),string:b,number:b,bool:b,any:b},g;for(g in b)c[g]=b[g]}return c}(),K=\/[+\\-*&%=<>!?|~^]\/,qa=\/^@(context|id|value|language|type|container|list|set|reverse|index|base|vocab|graph)"\/,E,I,xa={atom:!0,number:!0,variable:!0,string:!0,regexp:!0,"this":!0,"jsonld-keyword":!0},f={state:null,column:null,marked:null,cc:null},ra={name:"this",$/;"	p

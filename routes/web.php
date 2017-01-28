@@ -31,7 +31,6 @@ Route::group(['middleware' => 'auth'], function () {
  */
     Route::get('/{client}/media_plan/create', 'MediaPlansController@create');
     Route::get('/media_plan/{mediaPlan}/edit', 'MediaPlansController@edit');
-    Route::get('/{client}/media_plan/{mediaPlan}', 'MediaPlansController@show');;
     Route::post('/{client}/media_plan', 'MediaPlansController@store');
     Route::get('/media_plan/{mediaPlan}', 'MediaPlansController@show');
     Route::patch('/media_plan/{mediaPlan}', 'MediaPlansController@update');

@@ -58,15 +58,14 @@ class MediaPlansController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param MediaPlan $mediaPlan
+     * @param $id
      * @return \Illuminate\Http\Response
-     * @internal param int $id
      */
-    public function show(MediaPlan $mediaPlan)
+    public function show($id)
     {
-        $plan = $mediaPlan;
+        $plan = MediaPlan::with('client')->find($id);
 
-        return view('media_plans.show', compact('plan')); 
+        return view('media_plans.show', compact('plan'));
     }
 
     /**
