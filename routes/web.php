@@ -16,6 +16,9 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function () {
 
+/** 
+ * Client Routes
+ */
     Route::get('/clients/list', 'ClientsController@index');
     Route::get('/clients/create', 'ClientsController@create');
     Route::post('/clients', 'ClientsController@store');
@@ -23,11 +26,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/clients/{name}/edit', 'ClientsController@edit');
     Route::patch('/clients/{client}', 'ClientsController@update');
     Route::delete('/clients/{client}', 'ClientsController@destroy');
+/**
+ * Media Plan Routes
+ */
+    Route::get('/{client}/media_plan/create', 'MediaPlansController@create');
+    Route::get('/media_plan/{mediaPlan}/edit', 'MediaPlansController@edit');
+    Route::get('/{client}/media_plan/{mediaPlan}', 'MediaPlansController@show');;
+    Route::post('/{client}/media_plan', 'MediaPlansController@store');
+    Route::get('/media_plan/{mediaPlan}', 'MediaPlansController@show');
+    Route::patch('/media_plan/{mediaPlan}', 'MediaPlansController@update');
+    Route::delete('/media_plan/{mediaPlan}', 'MediaPlansController@destroy');
+
     
-    
-    
-    
-//    Route::resource('clients', 'ClientsController');
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
 });
