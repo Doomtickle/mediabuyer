@@ -14,17 +14,20 @@
     "bootstrap-less": "^3.3.8",
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.6.3",
-    "gulp": "^3.9z<.1",
+    "gulp": "^3.9.1",
     "icheck": "^1.0.2",
     "ionicons": "^3.0.0",
     "jquery": "^3.1.0",
     "laravel-elixir": "^6.0.0-9",
     "laravel-elixir-vue-2": "^0.2.0",
     "laravel-elixir-webpack-official": "^1.0.2",
-    "laravel-mix": "^0.5.0",
+    "laravel-mix": "^0.5.3",
     "lodash": "^4.16.2",
     "toastr": "^2.1.2",
     "vue": "^2.0.1",
     "vue-resource": "^1.0.3"
+  },
+  "dependencies": {
+    "webpack": "^2.2.0"
   }
 }

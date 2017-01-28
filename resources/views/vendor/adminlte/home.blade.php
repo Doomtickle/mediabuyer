@@ -11,14 +11,12 @@
 @section('main-content')
 	<div class="container-fluid spark-screen">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<div class="panel panel-default">
-					<div class="panel-heading">Home</div>
-
-					<div class="panel-body">
-						{{ trans('adminlte_lang::message.logged') }}
-					</div>
-				</div>
+			<div class="col-md-offset-3 col-md-6">
+                @if(App\Client::all())
+                    @foreach(App\Client::all() as $client)
+                        <h2>{{ $client->name }}</h2>
+                    @endforeach
+                @endif
 			</div>
 		</div>
 	</div>
