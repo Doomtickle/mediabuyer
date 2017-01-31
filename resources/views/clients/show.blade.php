@@ -17,6 +17,7 @@
                         <button type="submit" class="btn btn-primary">Delete it!</button>
                     </div>
                 </form>
+                <a href="/{{ $clientInfo->name }}/media_plan/create" class="btn btn-primary">Create a new media plan</a>
 			</div>
 		</div>
 	</div>

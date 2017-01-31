@@ -1,7 +1,7 @@
 @extends('adminlte::page')
 
 @section('htmlheader_title')
-    Title
+    Create a media plan
 @endsection
 
 
@@ -9,6 +9,8 @@
 	<div class="container-fluid spark-screen">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
+                <h1>{{ $client->name }}</h1>
+                <h2>Add a media plan</h2>
                 <form action="/{{ $client->name }}/media_plan" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="client_id" id="client_id" value="{{ $client->id }}" /> 
