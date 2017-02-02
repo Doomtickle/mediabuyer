@@ -1,9 +1,8 @@
 @extends('adminlte::page')
 
 @section('htmlheader_title')
-	Change Title here!
+    {{ $plan->title }}
 @endsection
-
 
 @section('main-content')
 	<div class="container-fluid spark-screen">
@@ -22,7 +21,7 @@
                         <button type="submit" class="btn btn-primary">Delete Media Plan</button>
                     </div>
 				</form>
-                <a href="/{{ $plan->title }}/rfp/create">Create a new RFP</a>
+                <a class="btn btn-primary" pathref="/{{ $plan->title }}/rfp/create">Create a new RFP</a>
 			</div>
 		</div>
 	</div>

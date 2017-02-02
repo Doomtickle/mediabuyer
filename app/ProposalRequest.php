@@ -55,7 +55,7 @@ class ProposalRequest extends Model
     {
         $mediaPlan = MediaPlan::fromTitle($mediaPlan);
         $media_plan_id = $mediaPlan->id;
-        $id = $proposalRequest;
+        $id = $proposalRequest->id;
 
         return static::where(compact('media_plan_id', 'id'))->with('client')->first();
 
@@ -86,7 +86,8 @@ class ProposalRequest extends Model
      */
     public function getBudgetAttribute($budget)
     {
-        return '$' . number_format($budget, 2, '.', '');
+
+        return number_format($budget, 2, '.', '');
     }
 }
 

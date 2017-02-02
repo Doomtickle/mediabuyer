@@ -103,6 +103,7 @@ class ProposalRequestsController extends Controller
     {
         $pr = ProposalRequest::find($id);
 
+
         return view('proposal_requests.edit', compact('pr'));
     }
 
@@ -117,7 +118,7 @@ class ProposalRequestsController extends Controller
      */
     public function update(RFPRequest $request, ProposalRequest $proposalRequest)
     {
-        /** @var  ProposalRequest $proposalRequest */
+
         $proposalRequest->update($request->all());
 
         return back();

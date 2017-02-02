@@ -900,6 +900,7 @@ __construct	app/Http/Controllers/HomeController.php	/^    public function __cons
 __currentLoopData	storage/framework/views/14fdaf1de3d994d44b3ecc2fe4da761953085443.php	/^            <?php $__currentLoopData = $clients; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/2f23ec0833092c36d0f149754f424eaa36345cd5.php	/^                    <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/4390a2d3c0eea9b039cf6ccca69164626788e28c.php	/^                                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/7e40bf8cd956708b0156244f31d66700435ff07d.php	/^                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                    <?php $__currentLoopData = App\\Client::all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/9957a88a5562819a034241675c128f52153057c8.php	/^                        <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                <?php $__currentLoopData = $clientList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
@@ -1187,6 +1188,7 @@ client	app/ProposalRequest.php	/^    public function client()$/;"	f
 clientInfo	app/Http/Controllers/ClientsController.php	/^        $clientInfo = Client::fromName($clientName);$/;"	v
 clientInfo	app/Http/Controllers/ClientsController.php	/^        $clientInfo = Client::fromName($name);$/;"	v
 clientList	app/Http/Controllers/ClientsController.php	/^        $clientList = Client::all();$/;"	v
+clients	resources/views/partials/sidebar.blade.php	/^                <?php $clients=App\\Client::all();?>$/;"	v
 clients	resources/views/proposal_requests/form.blade.php	/^            <?php $clients = App\\Client::all() ?>$/;"	v
 clients	storage/framework/views/14fdaf1de3d994d44b3ecc2fe4da761953085443.php	/^            <?php $clients = App\\Client::all() ?>$/;"	v
 clsName	public/plugins/datepicker/bootstrap-datepicker.js	/^			var clsName;$/;"	v
@@ -1715,7 +1717,7 @@ i	public/plugins/daterangepicker/daterangepicker.js	/^          var i = 0;$/;"	v
 iCols	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js	/^		var iCols = $('tbody tr:eq(0) td', s.nTable).length;$/;"	v
 iDtWidth	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js	/^		var iDtWidth = $(s.nTable).outerWidth();$/;"	v
 iWidth	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js	/^		var iWidth = 0;$/;"	v
-id	app/ProposalRequest.php	/^        $id = $proposalRequest;$/;"	v
+id	app/ProposalRequest.php	/^        $id = $proposalRequest->id;$/;"	v
 iframeOnload	public/plugins/ckeditor/plugins/wsc/dialogs/wsc.js	/^"#333")};"no_any_suggestions"==b?(b="No suggestions",c=a.dialog.getContentElement(a.dialog._.currentTabId,"ChangeTo_button")||a.LocalizationButton.ChangeTo_button.instance,c.disable(),c=a.dialog.getContentElement(a.dialog._.currentTabId,"ChangeAll")||a.LocalizationButton.ChangeAll.instance,c.disable(),e("ChangeTo_button"),e("ChangeAll")):(c("ChangeTo_button"),c("ChangeAll"));return b},O={iframeOnload:function(b){a.div_overlay.setEnable();b=a.dialog._.currentTabId;E(a.targetFromFrame[a.iframeNumber+$/;"	m
 img	public/plugins/ckeditor/ckeditor.js	/^details:1,datagrid:1,datalist:1},r={a:1,blockquote:1,embed:1,hr:1,img:1,li:1,object:1,ol:1,table:1,td:1,tr:1,th:1,ul:1,dl:1,dt:1,dd:1,form:1,audio:1,video:1},G=\/\\s*(?:;\\s*|$)\/,H=\/#\\((.+?)\\)\/g,K=CKEDITOR.dom.walker.bookmark(0,1),R=CKEDITOR.dom.walker.whitespaces(1);CKEDITOR.style=function(a,b){if("string"==typeof a.type)return new CKEDITOR.style.customHandlers[a.type](a);var c=a.attributes;c&&c.style&&(a.styles=CKEDITOR.tools.extend({},a.styles,CKEDITOR.tools.parseCssText(c.style)),delete c.style);$/;"	p
 index	app/Http/Controllers/ClientsController.php	/^    public function index()$/;"	f
@@ -1834,6 +1836,7 @@ left	public/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js
 left	public/plugins/datepicker/bootstrap-datepicker.js	/^			var left = offset.left,$/;"	v
 left	public/plugins/daterangepicker/daterangepicker.js	/^            var parentOffset = { top: 0, left: 0 },$/;"	p
 li	public/plugins/ckeditor/ckeditor.js	/^details:1,datagrid:1,datalist:1},r={a:1,blockquote:1,embed:1,hr:1,img:1,li:1,object:1,ol:1,table:1,td:1,tr:1,th:1,ul:1,dl:1,dt:1,dd:1,form:1,audio:1,video:1},G=\/\\s*(?:;\\s*|$)\/,H=\/#\\((.+?)\\)\/g,K=CKEDITOR.dom.walker.bookmark(0,1),R=CKEDITOR.dom.walker.whitespaces(1);CKEDITOR.style=function(a,b){if("string"==typeof a.type)return new CKEDITOR.style.customHandlers[a.type](a);var c=a.attributes;c&&c.style&&(a.styles=CKEDITOR.tools.extend({},a.styles,CKEDITOR.tools.parseCssText(c.style)),delete c.style);$/;"	p
+link	resources/views/partials/sidebar.blade.php	/^                    <?php $link=strtolower(str_replace(' ', '_', $client->name))?>$/;"	v
 linkStyles.position	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^    position: "relative"$/;"	p
 listen	app/Providers/EventServiceProvider.php	/^    protected $listen = [$/;"	v
 listen	public/plugins/knob/jquery.knob.js	/^        this.listen = function () {}; \/\/ on start, one time$/;"	f
@@ -1860,6 +1863,7 @@ lookupColors.aqua	public/plugins/flot/jquery.colorhelpers.js	/^        aqua:[0,2
 loop	storage/framework/views/14fdaf1de3d994d44b3ecc2fe4da761953085443.php	/^            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/2f23ec0833092c36d0f149754f424eaa36345cd5.php	/^                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/4390a2d3c0eea9b039cf6ccca69164626788e28c.php	/^                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
+loop	storage/framework/views/7e40bf8cd956708b0156244f31d66700435ff07d.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/9957a88a5562819a034241675c128f52153057c8.php	/^                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
