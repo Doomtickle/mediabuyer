@@ -22,6 +22,7 @@
                         <button type="submit" class="btn btn-primary">Delete Media Plan</button>
                     </div>
 				</form>
+                <a href="/{{ $plan->title }}/rfp/create">Create a new RFP</a>
 			</div>
 		</div>
 	</div>

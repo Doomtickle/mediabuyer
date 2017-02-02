@@ -49,8 +49,9 @@ class ClientsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param $clientName
      * @return \Illuminate\Http\Response
+     * @internal param int $id
      */
     public function show($clientName)
     {
@@ -62,8 +63,9 @@ class ClientsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param $name
      * @return \Illuminate\Http\Response
+     * @internal param int $id
      */
     public function edit($name)
     {

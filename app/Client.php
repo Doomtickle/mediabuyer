@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\ProposalRequest;
 use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
@@ -13,6 +14,14 @@ class Client extends Model
     {
         return $this->hasMany('App\MediaPlan');
         
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function proposalRequests()
+    {
+        return $this->hasMany(ProposalRequest::class);
     }
 
     public static function fromName($name)

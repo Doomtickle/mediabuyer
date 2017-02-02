@@ -15,5 +15,15 @@ class MediaPlan extends Model
 
     }
 
+    public function proposalRequests()
+    {
+        return $this->hasMany(ProposalRequest::class);
+    }
+
+    public static function fromTitle($title)
+    {
+        return static::where(compact('title'))->with('client')->first();
+
+    }
 
 }

@@ -36,7 +36,20 @@ Route::group(['middleware' => 'auth'], function () {
     Route::patch('/media_plan/{mediaPlan}', 'MediaPlansController@update');
     Route::delete('/media_plan/{mediaPlan}', 'MediaPlansController@destroy');
 
-    
+    /**
+     * Proposal Requests
+     */
+
+    Route::get('proposal_requests/{proposalRequest}/edit', 'ProposalRequestsController@edit');
+    Route::get('/{mediaPlan}/proposal_requests/{proposalRequest}', 'ProposalRequestsController@show');
+    Route::patch('proposal_requests/{proposalRequest}', 'ProposalRequestsController@update');
+    Route::delete('proposal_requests/{proposalRequest}', 'ProposalRequestsController@destroy');
+    Route::get('{title}/rfp/create', 'ProposalRequestsController@create');
+    Route::post('proposal_requests', 'ProposalRequestsController@store');
+
+
+
+
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
 });
