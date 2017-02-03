@@ -55,7 +55,7 @@ class ProposalRequest extends Model
     {
         $mediaPlan = MediaPlan::fromTitle($mediaPlan);
         $media_plan_id = $mediaPlan->id;
-        $id = $proposalRequest->id;
+        $id = $proposalRequest;
 
         return static::where(compact('media_plan_id', 'id'))->with('client')->first();
 

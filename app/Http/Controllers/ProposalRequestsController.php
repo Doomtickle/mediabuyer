@@ -67,18 +67,21 @@ class ProposalRequestsController extends Controller
     public function show($mediaPlan, $proposalRequest)
     {
         $rfp=ProposalRequest::planInfo($mediaPlan, $proposalRequest);
+        $plan = MediaPlan::fromTitle($mediaPlan);
 
-        return view('proposal_requests.show', compact('rfp'));
+        return view('proposal_requests.show', compact('rfp', 'plan'));
     }
 
     /**
      * Add the proposal document to the RFP
-     * @param $clientName
-     * @param $campaignName
+     * @param $mediaPlan
+     * @param $proposalRequest
      * @param Request $request
      * @return string
+     * @internal param $clientName
+     * @internal param $campaignName
      */
-    public function addFile($clientName, $campaignName, Request $request)
+    public function addFile($mediaPlan, $proposalRequest, Request $request)
     {
         $this->validate($request, [
 
@@ -88,7 +91,7 @@ class ProposalRequestsController extends Controller
 
         $proposal=Proposal::fromForm($request->file('proposal'));
 
-        return ProposalRequest::campaignInfo($clientName, $campaignName)->addProposal($proposal);
+        return ProposalRequest::planInfo($mediaPlan, $proposalRequest)->addProposal($proposal);
     }
 
     /**

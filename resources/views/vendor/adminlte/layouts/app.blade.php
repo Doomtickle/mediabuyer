@@ -38,6 +38,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 @section('scripts')
     @include('adminlte::layouts.partials.scripts')
 @show
+@yield('scripts.footer')
 
 </body>
 </html>

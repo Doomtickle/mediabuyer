@@ -44,23 +44,23 @@
                 </div>
             </div>
             <hr>
-            {{--<h3>Submitted Proposals</h3>--}}
-            {{--@if($rfp->proposals->first())--}}
-                {{--@foreach ($rfp->proposals as $proposal)--}}
-                    {{--<a class="btn btn-info" target="_blank" href="/{{$proposal->path}}">Proposal {{$proposal->id}}</a>--}}
-                {{--@endforeach--}}
-            {{--@else--}}
-                {{--No Proposals Yet--}}
-            {{--@endif--}}
-            {{--<hr>--}}
-            {{--<h2>Upload your proposal</h2>--}}
-            {{--<form id="addProposalsForm" action="/{{ $rfp->clientName }}/{{ $rfp->campaignName }}/proposals"--}}
-                  {{--method="POST"--}}
-                  {{--class="dropzone"--}}
-                  {{--enctype="multipart/form-data"--}}
-                  {{--style="margin-bottom:50px;">--}}
-                {{--{{ csrf_field() }}--}}
-            {{--</form>--}}
+            <h3>Submitted Proposals</h3>
+            @if($rfp->proposals->first())
+                @foreach ($rfp->proposals as $proposal)
+                    <a class="btn btn-info" target="_blank" href="/{{$proposal->path}}">Proposal {{$proposal->id}}</a>
+                @endforeach
+            @else
+                No Proposals Yet
+            @endif
+            <hr>
+            <h2>Upload your proposal</h2>
+            <form id="addProposalsForm" action="/{{ $plan->title }}/proposal_requests/{{ $rfp->id }}/proposals"
+                  method="POST"
+                  class="dropzone"
+                  enctype="multipart/form-data"
+                  style="margin-bottom:50px;">
+                {{ csrf_field() }}
+            </form>
         </div>
     </div>
 @endsection

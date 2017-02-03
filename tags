@@ -560,6 +560,7 @@ CreateClientsTable	database/migrations/2017_01_28_002709_create_clients_table.ph
 CreateMediaPlansTable	database/migrations/2017_01_28_035518_create_media_plans_table.php	/^class CreateMediaPlansTable extends Migration$/;"	c
 CreatePasswordResetsTable	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^class CreatePasswordResetsTable extends Migration$/;"	c
 CreateProposalRequestsTable	database/migrations/2017_02_01_154919_create_proposal_requests_table.php	/^class CreateProposalRequestsTable extends Migration$/;"	c
+CreateProposalTable	database/migrations/2016_11_07_000649_create_proposal_table.php	/^class CreateProposalTable extends Migration$/;"	c
 CreateUsersTable	database/migrations/2014_10_12_000000_create_users_table.php	/^class CreateUsersTable extends Migration$/;"	c
 DPGlobal.modes	public/plugins/datepicker/bootstrap-datepicker.js	/^		modes: [$/;"	p
 DataTable.ext.renderer.pageButton.bootstrap	public/plugins/datatables/dataTables.bootstrap.js	/^DataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, buttons, page, pages ) {$/;"	f
@@ -725,6 +726,7 @@ Permission	app/Permission.php	/^class Permission extends EntrustPermission$/;"	c
 Plot	public/plugins/flot/jquery.flot.js	/^    function Plot(placeholder, data_, options_, plugins) {$/;"	f
 PluginClass	public/plugins/bootstrap-slider/bootstrap-slider.js	/^			  PluginClass.prototype.option = function( opts ) {$/;"	c
 PluginClass.option	public/plugins/bootstrap-slider/bootstrap-slider.js	/^			  PluginClass.prototype.option = function( opts ) {$/;"	m
+Proposal	app/Proposal.php	/^class Proposal extends Model$/;"	c
 ProposalRequest	app/ProposalRequest.php	/^class ProposalRequest extends Model$/;"	c
 ProposalRequestsController	app/Http/Controllers/ProposalRequestsController.php	/^class ProposalRequestsController extends Controller$/;"	c
 R	public/plugins/colorpicker/bootstrap-colorpicker.js	/^        var R, G, B, X, C;$/;"	v
@@ -904,6 +906,7 @@ __currentLoopData	storage/framework/views/7e40bf8cd956708b0156244f31d66700435ff0
 __currentLoopData	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                    <?php $__currentLoopData = App\\Client::all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/9957a88a5562819a034241675c128f52153057c8.php	/^                        <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                <?php $__currentLoopData = $clientList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                <?php $__currentLoopData = $rfp->proposals; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $proposal): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __webpack_require__	public/js/app.js	/^\/******\/ 	function __webpack_require__(moduleId) {$/;"	f
 __webpack_require__.d	public/js/app.js	/^\/******\/ 	__webpack_require__.d = function(exports, name, getter) {$/;"	f
 __webpack_require__.i	public/js/app.js	/^\/******\/ 	__webpack_require__.i = function(value) { return value; };$/;"	f
@@ -1021,7 +1024,7 @@ accordion	public/plugins/jQueryUI/jquery-ui.js	/^var accordion = $.widget( "ui.a
 action	public/plugins/timepicker/bootstrap-timepicker.js	/^      var action = $(e.target).closest('a').data('action');$/;"	v
 addClass	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  function addClass(el, cssClass, regExp) {$/;"	f
 addClassMethods.align_img	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^    align_img: (function() {$/;"	p
-addFile	app/Http/Controllers/ProposalRequestsController.php	/^    public function addFile($clientName, $campaignName, Request $request)$/;"	f
+addFile	app/Http/Controllers/ProposalRequestsController.php	/^    public function addFile($mediaPlan, $proposalRequest, Request $request)$/;"	f
 addFormatToken	public/plugins/daterangepicker/moment.js	/^    function addFormatToken (token, padded, ordinal, callback) {$/;"	f
 addProposal	app/ProposalRequest.php	/^    public function addProposal(Proposal $proposal)$/;"	f
 addStyle	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  function addStyle(el, cssStyle, regExp) {$/;"	f
@@ -1109,6 +1112,7 @@ b.table	public/plugins/ckeditor/ckeditor.js	/^!0),(n=w.getEnclosedNode())&&n.typ
 b.tbody	public/plugins/ckeditor/ckeditor.js	/^!0),(n=w.getEnclosedNode())&&n.type==CKEDITOR.NODE_ELEMENT&&(k=n),"false"==k.getAttribute("contenteditable")))break a;k=void 0}if(k)this.fake(k);else{if(q){w=CKEDITOR.dom.walker.whitespaces(!0);n=\/\\ufeff|\\u00a0\/;b={table:1,tbody:1,tr:1};1<a.length&&(k=a[a.length-1],a[0].setEnd(k.endContainer,k.endOffset));k=a[0];a=k.collapsed;var u,t,x;if((c=k.getEnclosedNode())&&c.type==CKEDITOR.NODE_ELEMENT&&c.getName()in F&&(!c.is("a")||!c.getText()))try{x=c.$.createControlRange();x.addElement(c.$);x.select();$/;"	p
 b.totalBtns	public/plugins/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js	/^d.groups[d.groups.length-1],d.name),d.groups.push(d.name)),this._fixSubgroups(d))}};a.prototype._fixSubgroups=function(b){b=b.groups;for(var c=b.length,a=0;a<c;a+=1){var d=b[a];b[a]={name:d,totalBtns:ToolbarConfigurator.ToolbarModifier.getTotalSubGroupButtonsNumber(d,this.fullToolbarEditor)}}};a.stringifyJSONintoOneLine=function(b,a){a=a||{};var e=JSON.stringify(b,null,""),e=e.replace(\/\\n\/g,"");a.addSpaces&&(e=e.replace(\/(\\{|:|,|\\[|\\])\/g,function(a){return a+" "}),e=e.replace(\/(\\])\/g,function(a){return" "+$/;"	p
 b.tr	public/plugins/ckeditor/ckeditor.js	/^!0),(n=w.getEnclosedNode())&&n.type==CKEDITOR.NODE_ELEMENT&&(k=n),"false"==k.getAttribute("contenteditable")))break a;k=void 0}if(k)this.fake(k);else{if(q){w=CKEDITOR.dom.walker.whitespaces(!0);n=\/\\ufeff|\\u00a0\/;b={table:1,tbody:1,tr:1};1<a.length&&(k=a[a.length-1],a[0].setEnd(k.endContainer,k.endOffset));k=a[0];a=k.collapsed;var u,t,x;if((c=k.getEnclosedNode())&&c.type==CKEDITOR.NODE_ELEMENT&&c.getName()in F&&(!c.is("a")||!c.getText()))try{x=c.$.createControlRange();x.addElement(c.$);x.select();$/;"	p
+baseDir	app/Proposal.php	/^    protected $baseDir = 'rfps\/proposals';$/;"	v
 baseSpec	public/plugins/flot/jquery.flot.time.js	/^	var baseSpec = [$/;"	v
 baseUrl	tests/BrowserKitTest.php	/^    protected $baseUrl = 'http:\/\/localhost';$/;"	v
 bc.bottom	public/plugins/flot/jquery.flot.js	/^                        bc = {top: bc, right: bc, bottom: bc, left: bc};$/;"	p
@@ -1353,6 +1357,7 @@ dom.table	public/plugins/datatables/extensions/TableTools/js/dataTables.tableToo
 dontReport	app/Exceptions/Handler.php	/^    protected $dontReport = [$/;"	v
 down	database/migrations/2014_10_12_000000_create_users_table.php	/^    public function down()$/;"	f
 down	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^    public function down()$/;"	f
+down	database/migrations/2016_11_07_000649_create_proposal_table.php	/^    public function down()$/;"	f
 down	database/migrations/2017_01_28_002709_create_clients_table.php	/^    public function down()$/;"	f
 down	database/migrations/2017_01_28_035518_create_media_plans_table.php	/^    public function down()$/;"	f
 down	database/migrations/2017_01_31_210459_entrust_setup_tables.php	/^    public function down()$/;"	f
@@ -1495,6 +1500,7 @@ factory.dom.drag	public/plugins/datatables/extensions/ColReorder/js/dataTables.c
 factory.dom.pointer	public/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js	/^		"pointer": null$/;"	p
 file	bootstrap/autoload.php	/^| compiled class file which contains all of the classes commonly used$/;"	c
 fillInSeriesOptions	public/plugins/flot/jquery.flot.js	/^        function fillInSeriesOptions() {$/;"	f
+fillable	app/Proposal.php	/^    protected $fillable = ['path', 'user_id'];$/;"	v
 fillable	app/ProposalRequest.php	/^    protected $fillable = [$/;"	v
 fillable	app/User.php	/^    protected $fillable = [$/;"	v
 findNearbyItem	public/plugins/flot/jquery.flot.js	/^        function findNearbyItem(mouseX, mouseY, seriesFilter) {$/;"	f
@@ -1577,6 +1583,7 @@ formatMoment	public/plugins/daterangepicker/moment.js	/^    function formatMomen
 formatTokenFunctions	public/plugins/daterangepicker/moment.js	/^            formatTokenFunctions[padded[0]] = function () {$/;"	f
 formattedTooltipVal	public/plugins/bootstrap-slider/bootstrap-slider.js	/^				var formattedTooltipVal;$/;"	v
 formattingTokens	public/plugins/daterangepicker/moment.js	/^    var formattingTokens = \/(\\[[^\\[]*\\])|(\\\\)?(Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Q|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|mm?|ss?|S{1,4}|x|X|zz?|ZZ?|.)\/g;$/;"	v
+fromForm	app/Proposal.php	/^    public static function fromForm(UploadedFile $file)$/;"	f
 fromId	app/Client.php	/^    public static function fromId($id)$/;"	f
 fromName	app/Client.php	/^    public static function fromName($name)$/;"	f
 fromTitle	app/MediaPlan.php	/^    public static function fromTitle($title)$/;"	f
@@ -1717,7 +1724,7 @@ i	public/plugins/daterangepicker/daterangepicker.js	/^          var i = 0;$/;"	v
 iCols	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js	/^		var iCols = $('tbody tr:eq(0) td', s.nTable).length;$/;"	v
 iDtWidth	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js	/^		var iDtWidth = $(s.nTable).outerWidth();$/;"	v
 iWidth	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js	/^		var iWidth = 0;$/;"	v
-id	app/ProposalRequest.php	/^        $id = $proposalRequest->id;$/;"	v
+id	app/ProposalRequest.php	/^        $id = $proposalRequest;$/;"	v
 iframeOnload	public/plugins/ckeditor/plugins/wsc/dialogs/wsc.js	/^"#333")};"no_any_suggestions"==b?(b="No suggestions",c=a.dialog.getContentElement(a.dialog._.currentTabId,"ChangeTo_button")||a.LocalizationButton.ChangeTo_button.instance,c.disable(),c=a.dialog.getContentElement(a.dialog._.currentTabId,"ChangeAll")||a.LocalizationButton.ChangeAll.instance,c.disable(),e("ChangeTo_button"),e("ChangeAll")):(c("ChangeTo_button"),c("ChangeAll"));return b},O={iframeOnload:function(b){a.div_overlay.setEnable();b=a.dialog._.currentTabId;E(a.targetFromFrame[a.iframeNumber+$/;"	m
 img	public/plugins/ckeditor/ckeditor.js	/^details:1,datagrid:1,datalist:1},r={a:1,blockquote:1,embed:1,hr:1,img:1,li:1,object:1,ol:1,table:1,td:1,tr:1,th:1,ul:1,dl:1,dt:1,dd:1,form:1,audio:1,video:1},G=\/\\s*(?:;\\s*|$)\/,H=\/#\\((.+?)\\)\/g,K=CKEDITOR.dom.walker.bookmark(0,1),R=CKEDITOR.dom.walker.whitespaces(1);CKEDITOR.style=function(a,b){if("string"==typeof a.type)return new CKEDITOR.style.customHandlers[a.type](a);var c=a.attributes;c&&c.style&&(a.styles=CKEDITOR.tools.extend({},a.styles,CKEDITOR.tools.parseCssText(c.style)),delete c.style);$/;"	p
 index	app/Http/Controllers/ClientsController.php	/^    public function index()$/;"	f
@@ -1867,6 +1874,7 @@ loop	storage/framework/views/7e40bf8cd956708b0156244f31d66700435ff07d.php	/^    
 loop	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/9957a88a5562819a034241675c128f52153057c8.php	/^                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
+loop	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 m	public/plugins/ckeditor/ckeditor.js	/^(d=CKEDITOR.tools.indexOf(g.groups,d),0<=d)){g.groups.splice(d+1,0,a);return}h?g.groups.splice(0,0,a):g.groups.push(a);return}d=null}d&&(d=CKEDITOR.tools.indexOf(c,function(a){return a.name==d}));h?c.splice(0,0,a):"number"==typeof d?c.splice(d+1,0,b):c.push(a)}})();CKEDITOR.UI_SEPARATOR="separator";CKEDITOR.config.toolbarLocation="top";(function(){function q(a,d){function l(c){c=k.list[c];if(c.equals(a.editable())||"true"==c.getAttribute("contenteditable")){var e=a.createRange();e.selectNodeContents(c);e.select()}else a.getSelection().selectElement(c);a.focus()}function m(){n&&n.setHtml('\\x3cspan class\\x3d"cke_path_empty"\\x3e\\x26nbsp;\\x3c\/span\\x3e');delete k.list}var p=a.ui.spaceId("path"),n,k=a._.elementsPath,q=k.idBase;d.html+='\\x3cspan id\\x3d"'+p+'_label" class\\x3d"cke_voice_label"\\x3e'+a.lang.elementspath.eleLabel+'\\x3c\/span\\x3e\\x3cspan id\\x3d"'+$/;"	f
 makeFormatFunction	public/plugins/daterangepicker/moment.js	/^    function makeFormatFunction(format) {$/;"	f
 makeGetSet	public/plugins/daterangepicker/moment.js	/^    function makeGetSet (unit, keepTime) {$/;"	f
@@ -1945,6 +1953,7 @@ nTable	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeade
 nTfoot	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js	/^		var nTfoot = $('tfoot', s.nTable).clone(true)[0];$/;"	v
 nThead	public/plugins/datatables/extensions/FixedHeader/js/dataTables.fixedHeader.js	/^		var nThead = $('thead', s.nTable).clone(true)[0];$/;"	v
 name	app/Client.php	/^       $name = strtolower(str_replace('_', ' ', $name));$/;"	v
+name	app/Proposal.php	/^        $name = time() . $file->getClientOriginalName();$/;"	v
 name	public/plugins/ckeditor/ckeditor.js	/^(function(){var a={};CKEDITOR.addTemplate=function(d,b){var c=a[d];if(c)return c;c={name:d,source:b};CKEDITOR.fire("template",c);return a[d]=new CKEDITOR.template(c.source)};CKEDITOR.getTemplate=function(d){return a[d]}})();(function(){var a=[];CKEDITOR.addCss=function(d){a.push(d)};CKEDITOR.getCss=function(){return a.join("\\n")}})();CKEDITOR.on("instanceDestroyed",function(){CKEDITOR.tools.isEmpty(this.instances)&&CKEDITOR.fire("reset")});CKEDITOR.TRISTATE_ON=1;CKEDITOR.TRISTATE_OFF=2;$/;"	p
 name	public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js	/^b={"interface":a("interface"),"extends":a("extends"),constructor:a("constructor"),"public":a("public"),"private":a("private"),"protected":a("protected"),"static":a("static"),string:b,number:b,bool:b,any:b},g;for(g in b)c[g]=b[g]}return c}(),K=\/[+\\-*&%=<>!?|~^]\/,qa=\/^@(context|id|value|language|type|container|list|set|reverse|index|base|vocab|graph)"\/,E,I,xa={atom:!0,number:!0,variable:!0,string:!0,regexp:!0,"this":!0,"jsonld-keyword":!0},f={state:null,column:null,marked:null,cc:null},ra={name:"this",$/;"	p
 namespace	app/Providers/RouteServiceProvider.php	/^    protected $namespace = 'App\\Http\\Controllers';$/;"	v
@@ -2025,6 +2034,7 @@ password	database/factories/ModelFactory.php	/^    static $password;$/;"	v
 patchValueProperty	public/plugins/input-mask/jquery.inputmask.js	/^            function patchValueProperty(npt) {$/;"	f
 plan	app/Http/Controllers/MediaPlansController.php	/^        $plan = $mediaPlan;$/;"	v
 plan	app/Http/Controllers/MediaPlansController.php	/^        $plan = MediaPlan::with('client')->find($id);$/;"	v
+plan	app/Http/Controllers/ProposalRequestsController.php	/^        $plan = MediaPlan::fromTitle($mediaPlan);$/;"	v
 planInfo	app/ProposalRequest.php	/^    public static function planInfo($mediaPlan, $proposalRequest)$/;"	f
 plot.destroy	public/plugins/flot/jquery.flot.js	/^        plot.destroy = function () {$/;"	f
 plot.getAxes	public/plugins/flot/jquery.flot.js	/^        plot.getAxes = function () {$/;"	f
@@ -2070,9 +2080,11 @@ processRawData	public/plugins/flot/jquery.flot.image.js	/^    function processRa
 progressbar	public/plugins/jQueryUI/jquery-ui.js	/^var progressbar = $.widget( "ui.progressbar", {$/;"	v
 propName	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^        var propName = forward ? "nextSibling" : "previousSibling";$/;"	v
 proposal	app/Http/Controllers/ProposalRequestsController.php	/^        $proposal=Proposal::fromForm($request->file('proposal'));$/;"	v
+proposal	app/Proposal.php	/^        $proposal = new static;$/;"	v
 proposalRequests	app/Client.php	/^    public function proposalRequests()$/;"	f
 proposalRequests	app/MediaPlan.php	/^    public function proposalRequests()$/;"	f
 proposalRequests	app/User.php	/^    public function proposalRequests()$/;"	f
+proposal_request	app/Proposal.php	/^    public function proposal_request()$/;"	f
 proposals	app/ProposalRequest.php	/^    public function proposals()$/;"	f
 proto.base	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  proto.base = function() {$/;"	f
 q	public/plugins/ckeditor/ckeditor.js	/^b.$.elements.ckCsrfToken)?a=new CKEDITOR.dom.element(a):(a=new CKEDITOR.dom.element("input"),a.setAttributes({name:"ckCsrfToken",type:"hidden"}),b.append(a)),a.setAttribute("value",CKEDITOR.tools.getCsrfToken());return!0}return!1};e.filebrowser.url=f;e.hidden=!1;p(a,d.getContents(e["for"][0]).get(e["for"][1]),e.filebrowser)}}function h(a,c,d){if(-1!==d.indexOf(";")){d=d.split(";");for(var b=0;b<d.length;b++)if(h(a,c,d[b]))return!0;return!1}return(a=a.getContents(c).get(d).filebrowser)&&a.url}function q(a,$/;"	f
@@ -2318,6 +2330,7 @@ unlockCrosshair	public/plugins/flot/jquery.flot.crosshair.js	/^        plot.unlo
 unmaskedvalue	public/plugins/input-mask/jquery.inputmask.js	/^            function unmaskedvalue($input, skipDatepickerCheck) {$/;"	f
 up	database/migrations/2014_10_12_000000_create_users_table.php	/^    public function up()$/;"	f
 up	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^    public function up()$/;"	f
+up	database/migrations/2016_11_07_000649_create_proposal_table.php	/^    public function up()$/;"	f
 up	database/migrations/2017_01_28_002709_create_clients_table.php	/^    public function up()$/;"	f
 up	database/migrations/2017_01_28_035518_create_media_plans_table.php	/^    public function up()$/;"	f
 up	database/migrations/2017_01_31_210459_entrust_setup_tables.php	/^    public function up()$/;"	f

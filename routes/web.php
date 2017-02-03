@@ -46,6 +46,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('proposal_requests/{proposalRequest}', 'ProposalRequestsController@destroy');
     Route::get('{title}/rfp/create', 'ProposalRequestsController@create');
     Route::post('proposal_requests', 'ProposalRequestsController@store');
+    Route::post('/{mediaPlan}/proposal_requests/{proposalRequest}/proposals', 'ProposalRequestsController@addFile');
+
+
 
 
 
