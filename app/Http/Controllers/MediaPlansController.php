@@ -16,7 +16,9 @@ class MediaPlansController extends Controller
      */
     public function index()
     {
-        //
+       $mediaPlans = MediaPlan::with('client')->get();
+
+       return view('media_plans.list', compact('mediaPlans'));
     }
 
     /**

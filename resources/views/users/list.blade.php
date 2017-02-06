@@ -1,38 +1,38 @@
 @extends('adminlte::page')
 
 @section('htmlheader_title')
-    All Clients
+	Change Title here!
 @endsection
 
 
 @section('main-content')
-	<div class="container-fluid spark-screen">
-		<div class="row">
-			<div class="col-md-offset-1 col-md-10">
-                <h1>All Clients</h1>
+    <div class="container-fluid spark-screen">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <h1>Users</h1>
                 <hr>
-                <a href="/clients/create" class="btn btn-lg btn-primary">Add a client</a>
+                <a href="/user/create" class="btn btn-lg btn-primary">Add a new user</a>
                 <hr>
                 <div class="list-group big-box">
                     <div class="list-group-item active">
-                        <h4>All Clients</h4>
+                        <h4>All Users</h4>
                     </div>
                     <div class="form-group list-group-item">
                         <input type="text" name="quicksearch" class="quicksearch form-control"
                                data-filter=".quicksearch" placeholder="Search" autofocus/>
                     </div>
                     <div class="grid">
-                        @foreach($clientList as $client)
-                            <a href="/clients/{{ $client->name }}"
+                        @foreach($users as $user)
+                            <a href="/user/{{ $user->id }}"
                                class="list-group-item grid-item">
-                                {{ $client->name }}
+                                {{ $user->name }}
                             </a>
                         @endforeach
                     </div>
                 </div>
             </div>
-		</div>
-	</div>
+        </div>
+    </div>
 @endsection
 
 @section('scripts.footer')

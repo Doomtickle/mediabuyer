@@ -28,7 +28,7 @@ class Client extends Model
     {
        $name = strtolower(str_replace('_', ' ', $name));
 
-       return static::where(compact('name'))->first();
+       return static::where(compact('name'))->with('mediaPlans.proposalRequests.proposals')->first();
  
     }
 
