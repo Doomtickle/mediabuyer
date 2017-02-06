@@ -15,6 +15,10 @@
                        <label for="name">Client Name:</label>
                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter Client Name">
                    </div>
+                    <div class="form-group">
+                        <label for="clientIndustry">Industry</label>
+                        <input type="text" name="clientIndustry" class="form-control" id="clientIndustry" placeholder="Client Industry">
+                    </div>
                    <div class="form-group">
                        <button type="submit" class="btn btn-primary">Submit</button>
                    </div>

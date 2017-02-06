@@ -861,6 +861,7 @@ U.A	public/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobje
 UTCDate	public/plugins/datepicker/bootstrap-datepicker.js	/^	function UTCDate(){$/;"	f
 UTCToday	public/plugins/datepicker/bootstrap-datepicker.js	/^	function UTCToday(){$/;"	f
 User	app/User.php	/^class User extends Authenticatable$/;"	c
+UsersController	app/Http/Controllers/UsersController.php	/^class UsersController extends Controller$/;"	c
 VerifyCsrfToken	app/Http/Middleware/VerifyCsrfToken.php	/^class VerifyCsrfToken extends BaseVerifier$/;"	c
 W	public/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js	/^f+"\\x26MMdoctitle\\x3d"+d.title;b.flashvars="undefined"!=typeof b.flashvars?b.flashvars+("\\x26"+f):f;e.ie&&e.win&&4!=g.readyState&&(f=d.createElement("div"),c+="SWFObjectNew",f.setAttribute("id",c),g.parentNode.insertBefore(f,g),g.style.display="none",function(){4==g.readyState?g.parentNode.removeChild(g):setTimeout(arguments.callee,10)}());K(a,b,c)}}function W(a){if(e.ie&&e.win&&4!=a.readyState){var b=d.createElement("div");a.parentNode.insertBefore(b,a);b.parentNode.replaceChild(J(a),b);a.style.display=$/;"	f
 ZeroClipboard_TableTools.Client	public/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js	/^ZeroClipboard_TableTools.Client.prototype = {$/;"	c
@@ -1224,6 +1225,7 @@ create	app/Http/Controllers/Auth/RegisterController.php	/^    protected function
 create	app/Http/Controllers/ClientsController.php	/^    public function create()$/;"	f
 create	app/Http/Controllers/MediaPlansController.php	/^    public function create($name)$/;"	f
 create	app/Http/Controllers/ProposalRequestsController.php	/^    public function create($title)$/;"	f
+create	app/Http/Controllers/UsersController.php	/^    public function create()$/;"	f
 createApplication	tests/CreatesApplication.php	/^    public function createApplication()$/;"	f
 createButtonsNamesHash	public/plugins/ckeditor/samples/old/toolbar/toolbar.html	/^	function createButtonsNamesHash( items ) {$/;"	f
 createEditor	public/plugins/ckeditor/samples/old/ajax.html	/^		function createEditor() {$/;"	f
@@ -1291,9 +1293,13 @@ datepicker	public/plugins/jQueryUI/jquery-ui.js	/^var datepicker = $.datepicker;
 datepicker_bindHover	public/plugins/jQueryUI/jquery-ui.js	/^function datepicker_bindHover(dpDiv) {$/;"	f
 datepicker_extendRemove	public/plugins/jQueryUI/jquery-ui.js	/^function datepicker_extendRemove(target, props) {$/;"	f
 datepicker_handleMouseover	public/plugins/jQueryUI/jquery-ui.js	/^function datepicker_handleMouseover() {$/;"	f
+debounce	resources/views/clients/list.blade.php	/^        function debounce(fn, threshold) {$/;"	f
+debounce	resources/views/users/list.blade.php	/^        function debounce(fn, threshold) {$/;"	f
 debounce	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8fa.php	/^        function debounce(fn, threshold) {$/;"	f
 debounce	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^        function debounce(fn, threshold) {$/;"	f
 debounce	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^        function debounce(fn, threshold) {$/;"	f
+debounced	resources/views/clients/list.blade.php	/^            return function debounced() {$/;"	f
+debounced	resources/views/users/list.blade.php	/^            return function debounced() {$/;"	f
 debounced	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8fa.php	/^            return function debounced() {$/;"	f
 debounced	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^            return function debounced() {$/;"	f
 debounced	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^            return function debounced() {$/;"	f
@@ -1323,6 +1329,8 @@ defineBridget.$.fn	public/plugins/bootstrap-slider/bootstrap-slider.js	/^			  $.
 defineBridget.addOptionMethod	public/plugins/bootstrap-slider/bootstrap-slider.js	/^			function addOptionMethod( PluginClass ) {$/;"	f
 defineBridget.bridge	public/plugins/bootstrap-slider/bootstrap-slider.js	/^			function bridge( namespace, PluginClass ) {$/;"	f
 defineLocale	public/plugins/daterangepicker/moment.js	/^    function defineLocale (name, values) {$/;"	f
+delayed	resources/views/clients/list.blade.php	/^                function delayed() {$/;"	f
+delayed	resources/views/users/list.blade.php	/^                function delayed() {$/;"	f
 delayed	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8fa.php	/^                function delayed() {$/;"	f
 delayed	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                function delayed() {$/;"	f
 delayed	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                function delayed() {$/;"	f
@@ -1332,6 +1340,7 @@ deprecateSimple	public/plugins/daterangepicker/moment.js	/^    function deprecat
 destroy	app/Http/Controllers/ClientsController.php	/^    public function destroy(Client $client)$/;"	f
 destroy	app/Http/Controllers/MediaPlansController.php	/^    public function destroy(MediaPlan $mediaPlan)$/;"	f
 destroy	app/Http/Controllers/ProposalRequestsController.php	/^    public function destroy(ProposalRequest $proposalRequest)$/;"	f
+destroy	app/Http/Controllers/UsersController.php	/^    public function destroy($id)$/;"	f
 determineYear	public/plugins/jQueryUI/jquery-ui.js	/^				determineYear = function(value) {$/;"	f
 deviceIsAndroid	public/plugins/fastclick/fastclick.js	/^	var deviceIsAndroid = navigator.userAgent.indexOf('Android') > 0 && !deviceIsWindowsPhone;$/;"	v
 deviceIsBlackBerry10	public/plugins/fastclick/fastclick.js	/^	var deviceIsBlackBerry10 = navigator.userAgent.indexOf('BB10') > 0;$/;"	v
@@ -1462,6 +1471,7 @@ e.toolbarToButtons	public/plugins/ckeditor/samples/toolbarconfigurator/js/fullto
 edit	app/Http/Controllers/ClientsController.php	/^    public function edit($name)$/;"	f
 edit	app/Http/Controllers/MediaPlansController.php	/^    public function edit(MediaPlan $mediaPlan)$/;"	f
 edit	app/Http/Controllers/ProposalRequestsController.php	/^    public function edit($id)$/;"	f
+edit	app/Http/Controllers/UsersController.php	/^    public function edit($id)$/;"	f
 effect	public/plugins/jQueryUI/jquery-ui.js	/^var effect = $.effects;$/;"	v
 effect.effect	public/plugins/jQueryUI/jquery-ui.js	/^	effect = { effect: effect };$/;"	p
 el	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^        var el = isTextNode ? node.parentNode : node;$/;"	v
@@ -1516,6 +1526,8 @@ fillInSeriesOptions	public/plugins/flot/jquery.flot.js	/^        function fillIn
 fillable	app/Proposal.php	/^    protected $fillable = ['path', 'user_id'];$/;"	v
 fillable	app/ProposalRequest.php	/^    protected $fillable = [$/;"	v
 fillable	app/User.php	/^    protected $fillable = [$/;"	v
+filter	resources/views/clients/list.blade.php	/^            filter: function () {$/;"	j
+filter	resources/views/users/list.blade.php	/^            filter: function () {$/;"	j
 filter	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8fa.php	/^            filter: function () {$/;"	j
 filter	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^            filter: function () {$/;"	j
 filter	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^            filter: function () {$/;"	j
@@ -1665,6 +1677,8 @@ get_set__set	public/plugins/daterangepicker/moment.js	/^    function get_set__se
 giveOptions	public/plugins/ckeditor/plugins/wsc/dialogs/wsc.js	/^target:a.targetFromFrame[void 0]})):c="");g.cookie.set("osp",b.DefOptions.osp);g.cookie.set("udn",c);g.cookie.set("cust_dic_ids",b.DefOptions.cust_dic_ids);g.postMessage.send({id:"giveOptions"})},options_dic_send:function(b){b={osp:g.cookie.get("osp"),udn:g.cookie.get("udn"),cust_dic_ids:a.cust_dic_ids,id:"options_dic_send",udnCmd:g.cookie.get("udnCmd")};g.postMessage.send({message:b,target:a.targetFromFrame[a.iframeNumber+"_"+a.dialog._.currentTabId]})},data:function(a){delete a.id},giveOptions:function(){},$/;"	m
 globalLocale	public/plugins/daterangepicker/moment.js	/^    var globalLocale;$/;"	v
 grammerSuggest	public/plugins/ckeditor/plugins/wsc/dialogs/wsc.js	/^"_"+b],a.cmd[b])},suggestlist:function(b){delete b.id;a.div_overlay_no_check.setDisable();C();w(a.langList);var c=M(b.word),e="";c instanceof Array&&(c=b.word[0]);e=c=c.split(",");a.textNode.SpellTab.setValue(e[0]);b=z(A);A.clear();for(c=0;c<e.length;c++){var d=document.createElement("option");d.text=e[c];d.value=e[c];b.$.add(d,c)}v();a.div_overlay.setDisable()},grammerSuggest:function(b){delete b.id;delete b.mocklangs;C();w(a.langList);var c=b.grammSuggest[0];a.grammerSuggest.getElement().setHtml("");$/;"	m
+grid	resources/views/clients/list.blade.php	/^        var $grid = $('.grid').isotope({$/;"	v
+grid	resources/views/users/list.blade.php	/^        var $grid = $('.grid').isotope({$/;"	v
 grid	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8fa.php	/^        var $grid = $('.grid').isotope({$/;"	v
 grid	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^        var $grid = $('.grid').isotope({$/;"	v
 grid	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^        var $grid = $('.grid').isotope({$/;"	v
@@ -1751,6 +1765,7 @@ index	app/Http/Controllers/ClientsController.php	/^    public function index()$/
 index	app/Http/Controllers/HomeController.php	/^    public function index()$/;"	f
 index	app/Http/Controllers/MediaPlansController.php	/^    public function index()$/;"	f
 index	app/Http/Controllers/ProposalRequestsController.php	/^    public function index()$/;"	f
+index	app/Http/Controllers/UsersController.php	/^    public function index()$/;"	f
 indexOfHighlight	public/plugins/flot/jquery.flot.js	/^        function indexOfHighlight(s, p) {$/;"	f
 indexOfHighlight	public/plugins/flot/jquery.flot.pie.js	/^		function indexOfHighlight(s) {$/;"	f
 init	public/plugins/flot/jquery.flot.canvas.js	/^	function init(plot, classes) {$/;"	f
@@ -1937,6 +1952,7 @@ mediaPlan	app/Http/Controllers/ProposalRequestsController.php	/^        $mediaPl
 mediaPlan	app/ProposalRequest.php	/^        $mediaPlan = MediaPlan::fromTitle($mediaPlan);$/;"	v
 mediaPlan	app/ProposalRequest.php	/^    public function mediaPlan()$/;"	f
 mediaPlans	app/Client.php	/^    public function mediaPlans()$/;"	f
+mediaPlans	app/Http/Controllers/MediaPlansController.php	/^       $mediaPlans = MediaPlan::with('client')->get();$/;"	v
 media_plan_id	app/ProposalRequest.php	/^        $media_plan_id = $mediaPlan->id;$/;"	v
 menu	public/plugins/jQueryUI/jquery-ui.js	/^var menu = $.widget( "ui.menu", {$/;"	v
 methods	public/plugins/fastclick/fastclick.js	/^		var methods = ['onMouse', 'onClick', 'onTouchStart', 'onTouchMove', 'onTouchEnd', 'onTouchCancel'];$/;"	v
@@ -2115,6 +2131,8 @@ q	public/plugins/ckeditor/plugins/table/dialogs/table.js	/^(function(){function 
 q	public/plugins/colorpicker/bootstrap-colorpicker.js	/^        var q;$/;"	v
 q.n	public/plugins/ckeditor/plugins/table/dialogs/table.js	/^(function(){function v(a){for(var f=0,n=0,m=0,p,e=a.$.rows.length;m<e;m++){p=a.$.rows[m];for(var d=f=0,c,b=p.cells.length;d<b;d++)c=p.cells[d],f+=c.colSpan;f>n&&(n=f)}return n}function r(a){return function(){var f=this.getValue(),f=!!(CKEDITOR.dialog.validate.integer()(f)&&0<f);f||(alert(a),this.select());return f}}function q(a,f){var n=function(e){return new CKEDITOR.dom.element(e,a.document)},q=a.editable(),p=a.plugins.dialogadvtab;return{title:a.lang.table.title,minWidth:310,minHeight:CKEDITOR.env.ie?$/;"	f
 queryInList	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^    function queryInList(list, query) {$/;"	f
+quicksearch	resources/views/clients/list.blade.php	/^        var $quicksearch = $('.quicksearch').keyup(debounce(function () {$/;"	v
+quicksearch	resources/views/users/list.blade.php	/^        var $quicksearch = $('.quicksearch').keyup(debounce(function () {$/;"	v
 quicksearch	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8fa.php	/^        var $quicksearch = $('.quicksearch').keyup(debounce(function () {$/;"	v
 quicksearch	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^        var $quicksearch = $('.quicksearch').keyup(debounce(function () {$/;"	v
 quicksearch	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^        var $quicksearch = $('.quicksearch').keyup(debounce(function () {$/;"	v
@@ -2167,6 +2185,9 @@ return.toString	public/plugins/daterangepicker/moment.js	/^        return input 
 return.tokenize	public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js	/^next:{name:"arguments"}};k.lex=!0;return{startState:function(a){a={tokenize:w,lastType:"sof",cc:[],lexical:new ca((a||0)-C,0,"block",!1),localVars:t.localVars,context:t.localVars&&{vars:t.localVars},indented:0};t.globalVars&&"object"==typeof t.globalVars&&(a.globalVars=t.globalVars);return a},token:function(a,b){a.sol()&&(b.lexical.hasOwnProperty("align")||(b.lexical.align=!1),b.indented=a.indentation(),S(a,b));if(b.tokenize!=J&&a.eatSpace())return null;var e=b.tokenize(a,b);if("comment"==E)return e;$/;"	p
 rfp	app/Http/Controllers/ProposalRequestsController.php	/^        $rfp=ProposalRequest::planInfo($mediaPlan, $proposalRequest);$/;"	v
 rgba	public/plugins/jQueryUI/jquery-ui.js	/^		rgba: {$/;"	p
+role	app/Http/Controllers/UsersController.php	/^        $role = $user->roles[0]->display_name;$/;"	v
+role	app/Http/Controllers/UsersController.php	/^        $role = Role::where('name', $user->role)->get()->first();$/;"	v
+roles	app/User.php	/^    public function roles(){$/;"	f
 routeMiddleware	app/Http/Kernel.php	/^    protected $routeMiddleware = [$/;"	v
 row	public/plugins/daterangepicker/daterangepicker.js	/^            var row = title.substr(1, 1);$/;"	v
 rule.rename_tag	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^      rule = { rename_tag: DEFAULT_NODE_NAME };$/;"	p
@@ -2223,6 +2244,7 @@ shouldTrack	public/plugins/pace/pace.js	/^  shouldTrack = function(method) {$/;"
 show	app/Http/Controllers/ClientsController.php	/^    public function show($clientName)$/;"	f
 show	app/Http/Controllers/MediaPlansController.php	/^    public function show($id)$/;"	f
 show	app/Http/Controllers/ProposalRequestsController.php	/^    public function show($mediaPlan, $proposalRequest)$/;"	f
+show	app/Http/Controllers/UsersController.php	/^    public function show($id)$/;"	f
 showLinkRequestForm	app/Http/Controllers/Auth/ForgotPasswordController.php	/^    public function showLinkRequestForm()$/;"	f
 showLoginForm	app/Http/Controllers/Auth/LoginController.php	/^    public function showLoginForm()$/;"	f
 showRegistrationForm	app/Http/Controllers/Auth/RegisterController.php	/^    public function showRegistrationForm()$/;"	f
@@ -2256,6 +2278,7 @@ state	public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascr
 store	app/Http/Controllers/ClientsController.php	/^    public function store(Request $request)$/;"	f
 store	app/Http/Controllers/MediaPlansController.php	/^    public function store(Request $request)$/;"	f
 store	app/Http/Controllers/ProposalRequestsController.php	/^    public function store(RFPRequest $request)$/;"	f
+store	app/Http/Controllers/UsersController.php	/^    public function store(Request $request)$/;"	f
 stringParse	public/plugins/jQueryUI/jquery-ui.js	/^function stringParse( string ) {$/;"	f
 strong	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^        "strong": "b",$/;"	p
 styleDifference	public/plugins/jQueryUI/jquery-ui.js	/^function styleDifference( oldStyle, newStyle ) {$/;"	f
@@ -2311,6 +2334,8 @@ thingy.hasClass	public/plugins/datatables/extensions/TableTools/js/dataTables.ta
 thingy.hide	public/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js	/^			thingy.hide = function() { this.style.display = 'none'; };$/;"	c
 thingy.removeClass	public/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js	/^			thingy.removeClass = function(name) {$/;"	c
 thingy.show	public/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.js	/^			thingy.show = function() { this.style.display = ''; };$/;"	c
+this	resources/views/clients/list.blade.php	/^                var $this = $(this);$/;"	v
+this	resources/views/users/list.blade.php	/^                var $this = $(this);$/;"	v
 this	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8fa.php	/^                var $this = $(this);$/;"	v
 this	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                var $this = $(this);$/;"	v
 this	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                var $this = $(this);$/;"	v
@@ -2372,15 +2397,19 @@ upAnim.opacity	public/plugins/jQueryUI/jquery-ui.js	/^		upAnim = { opacity: 0 };
 update	app/Http/Controllers/ClientsController.php	/^    public function update(Request $request, Client $client)$/;"	f
 update	app/Http/Controllers/MediaPlansController.php	/^    public function update(Request $request, MediaPlan $mediaPlan) $/;"	f
 update	app/Http/Controllers/ProposalRequestsController.php	/^    public function update(RFPRequest $request, ProposalRequest $proposalRequest)$/;"	f
+update	app/Http/Controllers/UsersController.php	/^    public function update(Request $request, $id)$/;"	f
 updateInProgress	public/plugins/daterangepicker/moment.js	/^    var updateInProgress = false;$/;"	v
 updateSelection	public/plugins/flot/jquery.flot.selection.js	/^        function updateSelection(pos) {$/;"	f
 updateSwitcher	public/plugins/ckeditor/samples/toolbarconfigurator/index.html	/^		function updateSwitcher() {$/;"	f
 updateToolbar	public/plugins/ckeditor/samples/toolbarconfigurator/index.html	/^		function updateToolbar( editor ) {$/;"	f
 uri	server.php	/^$uri = urldecode($/;"	v
+user	app/Http/Controllers/UsersController.php	/^        $user = User::create($request->all());$/;"	v
+user	app/Http/Controllers/UsersController.php	/^        $user = User::with('roles')->find($id);$/;"	v
 user	app/ProposalRequest.php	/^    public function user()$/;"	f
 user	tests/AcachaAdminLTELaravelTest.php	/^        $user = factory(App\\User::class)->create();$/;"	v
 user	tests/AcachaAdminLTELaravelTest.php	/^        $user = factory(App\\User::class)->create(['password' => Hash::make('passw0RD')]);$/;"	v
 user_id	app/Http/Controllers/ProposalRequestsController.php	/^        $user_id = \\Auth::user()->id;$/;"	v
+users	app/Http/Controllers/UsersController.php	/^        $users = User::all();$/;"	v
 utils_hooks__hooks	public/plugins/daterangepicker/moment.js	/^    function utils_hooks__hooks () {$/;"	f
 v	public/plugins/ckeditor/ckeditor.js	/^"_",filters:[]};a.on("uiSpace",function(d){"bottom"==d.data.space&&q(a,d.data)})}})})();(function(){function q(b,d,a){a=b.config.forceEnterMode||a;"wysiwyg"==b.mode&&(d||(d=b.activeEnterMode),b.elementPath().isContextFor("p")||(d=CKEDITOR.ENTER_BR,a=1),b.fire("saveSnapshot"),d==CKEDITOR.ENTER_BR?t(b,d,null,a):u(b,d,null,a),b.fire("saveSnapshot"))}function v(b){b=b.getSelection().getRanges(!0);for(var d=b.length-1;0<d;d--)b[d].deleteContents();return b[0]}function y(b){var d=b.startContainer.getAscendant(function(a){return a.type==CKEDITOR.NODE_ELEMENT&&"true"==a.getAttribute("contenteditable")},$/;"	f
 v	public/plugins/ckeditor/plugins/image/dialogs/image.js	/^(function(){var v=function(d,l){function v(){var a=arguments,b=this.getContentElement("advanced","txtdlgGenStyle");b&&b.commit.apply(b,a);this.foreach(function(b){b.commit&&"txtdlgGenStyle"!=b.id&&b.commit.apply(b,a)})}function k(a){if(!w){w=1;var b=this.getDialog(),c=b.imageElement;if(c){this.commit(1,c);a=[].concat(a);for(var d=a.length,f,g=0;g<d;g++)(f=b.getContentElement.apply(b,a[g].split(":")))&&f.setup(1,c)}w=0}}var m=\/^\\s*(\\d+)((px)|\\%)?\\s*$\/i,z=\/(^\\s*(\\d+)((px)|\\%)?\\s*$)|^$\/i,r=\/^\\d+px$\/,$/;"	c

@@ -31,16 +31,23 @@
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
-            <li class="header">Dashboard</li>
             <li class="active"><a href="{{ url('home') }}"><i class='fa fa-home'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
-            <li><a href="/clients/list"><i class='fa fa-users'></i> <span>Clients List</span></a></li>
+            {{--<li><a href="/clients/list"><i class='fa fa-users'></i> <span>Clients List</span></a></li>--}}
             <li class="treeview">
-                <a href="/media_plan/create"><i class='fa fa-newspaper-o'></i> <span>Create media plan</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <a href="javascript;;void"><i class='fa fa-users'></i> <span>Users</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">{{ trans('adminlte_lang::message.linklevel2') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.linklevel2') }}</a></li>
+                    <li><a href="/users/list">View All</a></li>
+                    <li><a href="/user/create">Add new</a></li>
                 </ul>
             </li>
+            <li class="treeview">
+                <a href="javascript;;void"><i class='fa fa-briefcase'></i> <span>Clients</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a href="/clients/list">View All</a></li>
+                    <li><a href="clients/create">Add new</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="/media_plans/list"><i class='fa fa-calendar'></i> <span>Media Plans</span></a></li>
         </ul><!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->

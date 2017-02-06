@@ -2,7 +2,6 @@
 
 namespace App;
 
-use App\ProposalRequest;
 use Illuminate\Notifications\Notifiable;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -19,7 +18,14 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'email',
+        'title',
+        'phone',
+        'address',
+        'company',
+        'role',
+        'password',
     ];
 
     /**
@@ -35,5 +41,9 @@ class User extends Authenticatable
     public function proposalRequests()
     {
         return $this->hasMany(ProposalRequest::class);
+    }
+
+    public function roles(){
+        return $this->belongsToMany(Role::class);
     }
 }

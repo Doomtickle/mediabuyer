@@ -29,6 +29,7 @@ Route::group(['middleware' => 'auth'], function () {
 /**
  * Media Plan Routes
  */
+    Route::get('/media_plans/list', 'MediaPlansController@index');
     Route::get('/{client}/media_plan/create', 'MediaPlansController@create');
     Route::get('/media_plan/{mediaPlan}/edit', 'MediaPlansController@edit');
     Route::post('/{client}/media_plan', 'MediaPlansController@store');
@@ -48,7 +49,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('proposal_requests', 'ProposalRequestsController@store');
     Route::post('/{mediaPlan}/proposal_requests/{proposalRequest}/proposals', 'ProposalRequestsController@addFile');
 
-
+    /**
+     * Users
+     */
+    Route::get('/user/create', 'UsersController@create');
+    Route::get('/users/list', 'UsersController@index');
+    Route::get('/user/{user}', 'UsersController@show');
+    Route::post('/users', 'UsersController@store');
 
 
 

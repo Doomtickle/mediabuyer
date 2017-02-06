@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Client;
+use App\Role;
+use App\User;
 use Illuminate\Http\Request;
 
-class ClientsController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +15,9 @@ class ClientsController extends Controller
      */
     public function index()
     {
-        $clientList = Client::all();
+        $users = User::all();
 
-        return view('clients.list', compact('clientList'));
+        return view('users.list', compact('users'));
     }
 
     /**
@@ -26,7 +27,7 @@ class ClientsController extends Controller
      */
     public function create()
     {
-        return view('clients.create');
+        return view('users.create');
     }
 
     /**
@@ -37,75 +38,73 @@ class ClientsController extends Controller
      */
     public function store(Request $request)
     {
-
         $this->validate($request, [
             'name' => 'required',
-            'clientIndustry' => 'required'
+            'email' => 'required',
+            'title' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
+            'company' => 'required',
+            'role' => 'required',
+            'password' => 'required|min:6',
         ]);
+        $user = User::create($request->all());
 
-        Client::create(['name' => $request->name, 'clientIndustry' => $request->clientIndustry]);
+        $role = Role::where('name', $user->role)->get()->first();
+
+        $user->attachRole($role);
 
         return redirect()->route('home');
+
     }
 
     /**
      * Display the specified resource.
      *
-     * @param $clientName
+     * @param $id
      * @return \Illuminate\Http\Response
+     * @internal param User $user
      * @internal param int $id
      */
-    public function show($clientName)
+    public function show($id)
     {
-        $clientInfo = Client::fromName($clientName);
+        $user = User::with('roles')->find($id);
+        $role = $user->roles[0]->display_name;
 
-        return view('clients.show', compact('clientInfo'));
+        return view('users.show', compact('user', 'role'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param $name
+     * @param  int  $id
      * @return \Illuminate\Http\Response
-     * @internal param int $id
      */
-    public function edit($name)
+    public function edit($id)
     {
-        $clientInfo = Client::fromName($name);
-
-        return view('clients.edit', compact('clientInfo'));
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param Client $client
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
-     * @internal param int $id
      */
-    public function update(Request $request, Client $client)
+    public function update(Request $request, $id)
     {
-        $this->validate($request, [
-            'name' => 'required'
-        ]);
-
-        $client->update(['name' => $request->name]);
-
-        return redirect()->route('home');
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param Client $client
-     *
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Client $client)
+    public function destroy($id)
     {
-        $client->delete();
-
-        return redirect()->route('home');
+        //
     }
 }
