@@ -201,7 +201,7 @@
 <div class="row">
     <div class="col-md-2">
         <label for="dayParting">Day Parting</label>
-        <select class="form-control bool-select" id="dayParting" name="dayParting" data-toggle="describeDayParting">
+        <select class="form-control bool-select" id="dayParting" name="dayParting" data-toggle="#describeDayParting">
             <option value="0">No</option>
             <option value="1">Yes</option>
         </select>
