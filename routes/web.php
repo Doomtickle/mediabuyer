@@ -48,6 +48,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('{title}/rfp/create', 'ProposalRequestsController@create');
     Route::post('proposal_requests', 'ProposalRequestsController@store');
     Route::post('/{mediaPlan}/proposal_requests/{proposalRequest}/proposals', 'ProposalRequestsController@addFile');
+    Route::get('rfp/{id}/adUnits/add', 'AdUnitsController@create');
+
+    /**
+     * Ad Units
+     */
+    Route::post('/ad_units', 'AdUnitsController@store');
+    
+    
 
     /**
      * Users
@@ -56,9 +64,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/users/list', 'UsersController@index');
     Route::get('/user/{user}', 'UsersController@show');
     Route::post('/users', 'UsersController@store');
-
-
-
 
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes

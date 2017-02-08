@@ -24,14 +24,14 @@ class RFPRequest extends FormRequest
     public function rules()
     {
         return [
-            'clientName'      =>'required',
-            'clientIndustry'  =>'required',
-            'campaignName'    =>'required',
-            'basicDescription'=>'required',
-            'flightDateStart' =>'required',
-            'flightDateEnd'   =>'required',
-            'staggered'       =>'required',
-            'budget'          =>'required'
+            'clientName'       => 'required',
+            'clientIndustry'   => 'required',
+            'campaignName'     => 'required',
+            'basicDescription' => 'required',
+            'flightDateStart'  => 'required',
+            'flightDateEnd'    => 'required',
+            'staggered'        => 'required',
+            'grossBudget'      => 'required'
 
         ];
     }

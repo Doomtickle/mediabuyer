@@ -18,9 +18,14 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'name' => 'Daron Adkins',
+        'email' => 'daron.adkins@gmail.com',
+        'title' => 'Web Developer',
+        'phone' => '850-866-6248',
+        'address' => '3706 Hwy 98, Suite103, Mexico Beach FL',
+        'company' => 'Kerigan Marketing Associates',
+        'role' => 'admin',
+        'password' => $password ?: $password = bcrypt('23wesdxc'),
         'remember_token' => str_random(10),
     ];
 });

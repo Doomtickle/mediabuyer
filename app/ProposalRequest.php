@@ -12,17 +12,47 @@ class ProposalRequest extends Model
     protected $table = 'proposal_requests';
 
     protected $fillable = [
-
-        'budget',
         'client_id',
         'media_plan_id',
         'staggered',
         'clientName',
         'campaignName',
+        'goalsAndObjectives',
         'flightDateEnd',
         'clientIndustry',
         'flightDateStart',
-        'basicDescription'
+        'basicDescription',
+        'grossBudget',
+        //new fields
+        'netBudget',
+        'targetingText',
+        'targetingDisplay',
+        'targetingVideo',
+        'targetingGeoFencing',
+        'targetingGeography',
+        'geography',
+        'describeGeography',
+        'targetingAgeGroup',
+        'describeAgeGroup',
+        'targetingHouseholdIncome',
+        'describeHouseHoldIncome',
+        'targetingGender',
+        'describeGender',
+        'targetingInterests',
+        'describeInterests',
+        'targetingDevices',
+        'describeDevices',
+        'frequencyCapping',
+        'describeFrequencyCapping',
+        'dayParting',
+        'describeDayParting',
+        'specifications',
+        'orderTerms',
+        'submissionInstructions',
+        'proposalFormat',
+        'proposalDueDate',
+        'decisionMadeBy',
+        'selectionCriteria',
 
     ];
 
@@ -79,15 +109,22 @@ class ProposalRequest extends Model
         return $this->proposals()->save($proposal);
     }
 
+    public function adUnits()
+    {
+        return $this->hasMany(AdUnit::class, 'proposal_request_id');
+             
+    }
+    
+
     /**
      * Convert the budget to dollars and cents
      * @param $budget
      * @return string
      */
-    public function getBudgetAttribute($budget)
+    public function getGrossBudgetAttribute($grossBudget)
     {
 
-        return number_format($budget, 2, '.', '');
+        return number_format($grossBudget, 2, '.', '');
     }
 }
 

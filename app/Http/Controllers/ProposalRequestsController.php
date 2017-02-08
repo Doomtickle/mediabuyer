@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\MediaPlan;
 use App\Proposal;
 use App\ProposalRequest;
@@ -35,7 +34,7 @@ class ProposalRequestsController extends Controller
         $mediaPlan = MediaPlan::fromTitle($title);
         $user_id = \Auth::user()->id;
 
-        return view('proposal_requests.create', compact('mediaPlan', 'user_id'));
+        return view('proposal_requests.basicInfo', compact('mediaPlan', 'user_id'));
     }
 
     /**
@@ -51,7 +50,7 @@ class ProposalRequestsController extends Controller
 
         $pr->save();
 
-        return Redirect::to('/home');
+        return redirect()->action('AdUnitsController@create', ['proposal_request_id' => $pr->id]);
     }
 
     /**

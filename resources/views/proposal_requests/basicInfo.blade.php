@@ -17,9 +17,30 @@
                             </ul>
                         </div>
                     @endif
-                    @include('proposal_requests.form')
+                    @include('proposal_requests.basicform')
                 </form>
             </div>
         </div>
     </div>
+@stop
+@section('scripts.footer')
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+	<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_square-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('.bool-select').on('change', function(e){
+        var textbox = $(this).data('toggle');
+       if($(textbox).prop('disabled'))
+           return $(textbox).prop('disabled', false);
+       $(textbox).prop('disabled', true);
+    });
+});
+</script>
 @stop

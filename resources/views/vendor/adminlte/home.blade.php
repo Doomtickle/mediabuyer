@@ -82,7 +82,7 @@
                                     @php
                                         $totalBudget = 0;
                                         foreach(App\ProposalRequest::all() as $rfp){
-                                            $totalBudget += $rfp->budget;
+                                            $totalBudget += $rfp->grossBudget;
                                         }
                                     @endphp
                                     ${{ number_format($totalBudget, 2, '.', ',') }}

@@ -11,6 +11,19 @@
 //Font awesome
 @import "node_modules/font-awesome/scss/font-awesome.scss";
 
+.icheckbox_square-blue.checked {
+    margin-right: 10px;
+}
+input{
+    height: 40px;
+}
+.icheckbox_square-blue.checked {
+    background-position: -48px 0;
+    margin-right: 10px;
+}
+label{
+    font-size:18px;
+}
 .big-box{
   max-height:450px;
   overflow: auto;
