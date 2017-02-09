@@ -20,6 +20,12 @@ class MediaPlan extends Model
         return $this->hasMany(ProposalRequest::class);
     }
 
+    public function successMetrics()
+    {
+        return $this->hasMany(SuccessMetric::class);
+    }
+    
+
     public static function fromTitle($title)
     {
         return static::where(compact('title'))->with('client')->first();

@@ -12,8 +12,13 @@ class Client extends Model
 
     public function mediaPlans()
     {
-        return $this->hasMany('App\MediaPlan');
+        return $this->hasMany(MediaPlan::class);
         
+    }
+
+    public function successMetrics()
+    {
+        return $this->hasMany(SuccessMetric::class);
     }
 
     /**

@@ -75,6 +75,27 @@ class ProposalRequest extends Model
         return $this->belongsTo(MediaPlan::class, 'media_plan_id');
     }
 
+
+    public function successMetrics()
+    {
+        return $this->hasMany(SuccessMetric::class);
+    }
+    
+    /**
+     * Proposals belong to a proposal request
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function proposals()
+    {
+        return $this->hasMany(Proposal::class);
+    }
+
+    public function adUnits()
+    {
+        return $this->hasMany(AdUnit::class, 'proposal_request_id');
+             
+    }
+
     /**
      * Find the ProposalRequest with the given params
      * @param $mediaPlan
@@ -90,16 +111,6 @@ class ProposalRequest extends Model
         return static::where(compact('media_plan_id', 'id'))->with('client')->first();
 
     }
-
-    /**
-     * Proposals belong to a proposal request
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function proposals()
-    {
-        return $this->hasMany(Proposal::class);
-    }
-
     /**
      * @param Proposal $proposal
      * @return Model
@@ -109,22 +120,21 @@ class ProposalRequest extends Model
         return $this->proposals()->save($proposal);
     }
 
-    public function adUnits()
-    {
-        return $this->hasMany(AdUnit::class, 'proposal_request_id');
-             
-    }
-    
-
     /**
      * Convert the budget to dollars and cents
      * @param $budget
      * @return string
      */
+
     public function getGrossBudgetAttribute($grossBudget)
     {
-
         return number_format($grossBudget, 2, '.', '');
     }
+
+    public function getNetBudgetAttribute($netBudget)
+    {
+       return number_format($netBudget, 2, '.', ''); 
+    }
+    
 }
 

@@ -50,9 +50,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/{mediaPlan}/proposal_requests/{proposalRequest}/proposals', 'ProposalRequestsController@addFile');
     Route::get('rfp/{id}/adUnits/add', 'AdUnitsController@create');
 
-    /**
-     * Ad Units
-     */
+    //Success Metrics
+    Route::get('rfp/{id}/success_metrics/add', 'SuccessMetricsController@create');
+    Route::post('/success_metrics', 'SuccessMetricsController@store');
+    
+    
+    
+    //  Ad Units
     Route::post('/ad_units', 'AdUnitsController@store');
     
     
