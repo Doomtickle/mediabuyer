@@ -23,16 +23,11 @@ class CreateProposalRequestsTable extends Migration
             $table->string('campaignName', 80);
             $table->text('basicDescription', 500);
             $table->text('goalsAndObjectives', 500);
-            $table->date('flightDateStart');
-            $table->date('flightDateEnd');
-            $table->string('staggered');
             $table->float('grossBudget');
             $table->float('netBudget');
-            $table->boolean('targetingText')->default(false);
-            $table->boolean('targetingDisplay')->default(false);
-            $table->boolean('targetingVideo')->default(false);
-            $table->boolean('targetingGeoFencing')->default(false);
-            $table->boolean('targetingGeography')->default(false);
+            $table->string('staggered');
+            $table->date('flightDateStart');
+            $table->date('flightDateEnd');
             $table->boolean('geography')->default(false);
             $table->text('describeGeography', 250);
             $table->boolean('targetingAgeGroup')->default(false);
@@ -47,8 +42,6 @@ class CreateProposalRequestsTable extends Migration
             $table->text('describeDevices', 100);
             $table->boolean('frequencyCapping')->default(false);
             $table->text('describeFrequencyCapping', 500);
-            $table->boolean('dayParting')->default(false);
-            $table->text('describeDayParting', 500);
             $table->text('specifications', 500);
             $table->text('orderTerms', 500);
             $table->text('submissionInstructions', 500);

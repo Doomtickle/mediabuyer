@@ -28,8 +28,8 @@
     <div class="form-group col-md-10">
         <label for="basicDescription">Basic Description</label>
         <textarea type="text" name="basicDescription" id="basicDescription"
-                  class="form-control" value="{{ old('basicDescription') }}"
-                  rows="5">
+                  class="form-control"
+                  rows="5">{{ $mediaPlan->basicDescription}}
         </textarea>
     </div>
 </div>
@@ -38,8 +38,8 @@
     <div class="form-group col-md-10">
         <label for="goalsAndObjectives">Goals and Objectives</label>
         <textarea type="text" name="goalsAndObjectives" id="goalsAndObjectives"
-                  class="form-control" value="{{ old('goalsAndObjectives') }}"
-                  rows="5">
+                  class="form-control"
+                  rows="5">{{ $mediaPlan->goalsAndObjectives}}
         </textarea>
     </div>
 </div>
@@ -66,31 +66,15 @@
 <div class="row">
     <div class="form-group col-md-3">
         <label for="grossBudget">Gross Budget</label>
-        <input type="text" name="grossBudget" id="grossBudget" class="form-control" value="{{ old('grossBudget') }}">
+        <input type="text" name="grossBudget" id="grossBudget" class="form-control" value="{{ $mediaPlan->grossBudget }}">
     </div>
     <div class="form-group col-md-offset-3 col-md-3">
         <label for="netBudget">Net Budget</label>
-        <input type="text" name="netBudget" id="netBudget" class="form-control" value="{{ old('netBudget') }}">
+        <input type="text" name="netBudget" id="netBudget" class="form-control" value="{{ $mediaPlan->netBudget}}">
     </div>
 </div>
 <hr/>
 <h2>Targeting</h2>
-<div class="row">
-    <div class="checkbox targeting-boxes">
-        <label class="checkbox-inline">
-            <input type="checkbox" name="targetingText" value=1>Text
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" name="targetingDisplay" value=1>Display
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" name="targetingVideo" value=1>Video
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" name="targetingGeoFencing" value=1>Geo-Fencing
-        </label>
-    </div>
-</div>
 <hr>
 <div class="row">
     <div class="col-md-2">
@@ -195,21 +179,6 @@
         <div class="form-group">
             <label for="describeFrequencyCapping">Details</label>
             <input type="text" name="describeFrequencyCapping" class="form-control" id="describeFrequencyCapping" disabled>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-2">
-        <label for="dayParting">Day Parting</label>
-        <select class="form-control bool-select" id="dayParting" name="dayParting" data-toggle="#describeDayParting">
-            <option value="0">No</option>
-            <option value="1">Yes</option>
-        </select>
-    </div>
-    <div class="col-md-8">
-        <div class="form-group">
-            <label for="describeDayParting">Details</label>
-            <input type="text" name="describeDayParting" class="form-control" id="describeDayParting" disabled>
         </div>
     </div>
 </div>

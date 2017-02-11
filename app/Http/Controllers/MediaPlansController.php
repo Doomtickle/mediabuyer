@@ -48,13 +48,17 @@ class MediaPlansController extends Controller
         ]);
 
         $mediaPlan = MediaPlan::create([
-            'client_id'         => $request->client_id,
-            'title'             => $request->title,
-            'flight_date_start' => $request->flight_date_start,
-            'flight_date_end'   => $request->flight_date_end,
+            'client_id'          => $request->client_id,
+            'title'              => $request->title,
+            'basicDescription'   => $request->basicDescription,
+            'goalsAndObjectives' => $request->goalsAndObjectives,
+            'grossBudget'        => $request->grossBudget,
+            'netBudget'          => $request->netBudget,
+            'flight_date_start'  => $request->flight_date_start,
+            'flight_date_end'    => $request->flight_date_end,
         ]);
 
-        return redirect()->to('media_plan/' . $mediaPlan->id );
+        return redirect()->to('/media_plan/' . $mediaPlan->id );
     }
 
     /**

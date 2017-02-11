@@ -13,6 +13,10 @@
                 <ul>
                     <li>Flight Date Start: {{ date('M j, Y', strtotime($plan->flight_date_start)) }}</li>
                     <li>Flight Date End: {{ date('M j, Y', strtotime($plan->flight_date_end)) }}</li>
+                    <li>Basic description: {{ $plan->basicDescription }}</li>
+                    <li>Goals and objectives: {{ $plan->goalsAndObjectives }}</li>
+                    <li>Gross Budget: ${{ number_format($plan->grossBudget, 2, '.', ',') }}</li>
+                    <li>Net Budget: ${{ number_format($plan->netBudget, 2, '.', ',') }}</li>
                 </ul>
 				<form action="/media_plan/{{ $plan->id }}" method="post">
 					{{ csrf_field() }}

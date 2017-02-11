@@ -17,6 +17,10 @@ class CreateMediaPlansTable extends Migration
             $table->increments('id');
             $table->integer('client_id');
             $table->string('title');
+            $table->text('basicDescription', 500);
+            $table->text('goalsAndObjectives', 500);
+            $table->float('grossBudget');
+            $table->float('netBudget');
             $table->date('flight_date_start');
             $table->date('flight_date_end');
             $table->timestamps();
