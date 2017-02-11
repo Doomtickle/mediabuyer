@@ -39,7 +39,7 @@ class ClientsController extends Controller
     {
 
         $this->validate($request, [
-            'name' => 'required',
+            'name' => 'required | unique:clients',
             'clientIndustry' => 'required'
         ]);
 

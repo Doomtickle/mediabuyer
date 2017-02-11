@@ -47,14 +47,14 @@ class MediaPlansController extends Controller
             'flight_date_end'   => 'required'
         ]);
 
-        MediaPlan::create([
+        $mediaPlan = MediaPlan::create([
             'client_id'         => $request->client_id,
             'title'             => $request->title,
             'flight_date_start' => $request->flight_date_start,
             'flight_date_end'   => $request->flight_date_end,
         ]);
 
-        return redirect()->route('home');
+        return redirect()->to('media_plan/' . $mediaPlan->id );
     }
 
     /**

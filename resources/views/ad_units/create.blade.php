@@ -2,53 +2,57 @@
 
 @section('main-content')
     <div class="container-fluid">
+        <h1>Add media units</h1>
+        <hr>
         <div class="row">
-            <div class="col-md-10">
-                <h1>Add media units</h1>
-                <hr>
-                <form method="POST" action="/ad_units" id="adUnits">
-                    @if (count($errors) > 0)
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-                    {{ csrf_field() }}
-                    <input type="hidden" name="proposal_request_id" value="{{ $rfp }}">
-                    @include('ad_units.form')
-                </form>
-                <hr />
-                @php
-                    $adUnits = App\AdUnit::where('proposal_request_id', '=', $rfp )->get();
-                @endphp
-                @if($adUnits)
-                    <h2>Current Media Units</h2>
-                    <div class="allMediaUnits">
-                        <div class="mediaUnits col-md-10">
-							<table class="table table-striped">
-								<thead>
-								  <tr>
-									<th>Media Type</th>
-									<th>Size</th>
-									<th>Description</th>
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-									@foreach($adUnits as $adUnit)
-										<td>{{ $adUnit->type }}</td>
-										<td>{{ $adUnit->size }}</td>
-										<td>{{ $adUnit->description }} </td>
-									</tr>
-									@endforeach
-							</tbody>
-						</table>
+            
+            <form method="POST" action="/ad_units" id="adUnits">
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
                     </div>
                 @endif
+                {{ csrf_field() }}
+                <input type="hidden" name="proposal_request_id" value="{{ $rfp }}">
+                @include('ad_units.form')
+            </form>
+        </div>
+        <hr />
+        @php
+            $adUnits = App\AdUnit::where('proposal_request_id', '=', $rfp )->get();
+        @endphp
+        @if($adUnits)
+            <h2>Current Media Units</h2>
+            <div class="allMediaUnits">
+                <div class="mediaUnits col-md-10">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Media Type</th>
+                            <th>Size</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($adUnits as $adUnit)
+                              <tr>
+                                <td>{{ $adUnit->type }}</td>
+                                <td>{{ $adUnit->size }}</td>
+                                <td>{{ $adUnit->description }} </td>
+                              </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            @endif
             </div>
+        </div>
+        <div class="col-md-4 pull-right">
+            <a href="/rfp/{{ $rfp }}/success_metrics/add" class="btn btn-primary">Save & Continue</a>
         </div>
     </div>
 @stop

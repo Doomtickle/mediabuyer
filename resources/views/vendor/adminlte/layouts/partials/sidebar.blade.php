@@ -44,7 +44,7 @@
                 <a href="javascript;;void"><i class='fa fa-briefcase'></i> <span>Clients</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
                     <li><a href="/clients/list">View All</a></li>
-                    <li><a href="clients/create">Add new</a></li>
+                    <li><a href="/clients/create">Add new</a></li>
                 </ul>
             </li>
             <li class="active"><a href="/media_plans/list"><i class='fa fa-calendar'></i> <span>Media Plans</span></a></li>

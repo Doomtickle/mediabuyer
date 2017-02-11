@@ -30,27 +30,38 @@
                     <h2>Current Success Metrics</h2>
                     <div class="allSuccessMetrics">
                         <div class="successMetrics col-md-10">
-							<table class="table table-striped">
-								<thead>
-								  <tr>
-									<th>Type</th>
-									<th>Description</th>
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-									@foreach($successMetrics as $successMetric)
-										<td>{{ $successMetric->type }}</td>
-										<td>{{ $successMetric->description }} </td>
-									</tr>
-									@endforeach
-							</tbody>
-						</table>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        @foreach($successMetrics as $successMetric)
+                                            <td>{{ $successMetric->type }}</td>
+                                            <td>{{ $successMetric->description }} </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 @endif
             </div>
         </div>
+        <div class="col-md-8">
+            <div class="row">
+                @php
+                    $mediaPlan = App\MediaPlan::find($pr->media_plan_id);
+                    $mediaPlan = $mediaPlan->title;
+                @endphp
+                <a href="/{{ $mediaPlan }}/proposal_requests/{{ $pr->id }}" class="btn btn-primary pull-right">Create RFP</a>
+            </div>
+        </div>
     </div>
+
 @stop
 @section('scripts.footer')
     <script>

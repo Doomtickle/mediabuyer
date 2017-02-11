@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\MediaPlan;
+
 use App\Proposal;
+use App\MediaPlan;
 use App\ProposalRequest;
 use Illuminate\Http\Request;
 use App\Http\Requests\RFPRequest;
@@ -65,7 +66,7 @@ class ProposalRequestsController extends Controller
      */
     public function show($mediaPlan, $proposalRequest)
     {
-        $rfp=ProposalRequest::planInfo($mediaPlan, $proposalRequest);
+        $rfp=ProposalRequest::planInfo($mediaPlan, $proposalRequest)->with('client', 'adUnits', 'successMetrics')->find($proposalRequest);
         $plan = MediaPlan::fromTitle($mediaPlan);
 
         return view('proposal_requests.show', compact('rfp', 'plan'));

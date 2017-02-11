@@ -906,10 +906,10 @@ __construct	app/Http/Controllers/Auth/LoginController.php	/^    public function 
 __construct	app/Http/Controllers/Auth/RegisterController.php	/^    public function __construct()$/;"	f
 __construct	app/Http/Controllers/Auth/ResetPasswordController.php	/^    public function __construct()$/;"	f
 __construct	app/Http/Controllers/HomeController.php	/^    public function __construct()$/;"	f
-__currentLoopData	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^									<?php $__currentLoopData = $adUnits; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $adUnit): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
-__currentLoopData	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^                                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^                            <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^                        <?php $__currentLoopData = $adUnits; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $adUnit): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/04dbcf7d521ea86aac108a746e7f4c941df7009f.php	/^                                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
-__currentLoopData	storage/framework/views/12e7f710d432d09795dceccc1048a21507239172.php	/^									<?php $__currentLoopData = $successMetrics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $successMetric): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/12e7f710d432d09795dceccc1048a21507239172.php	/^                                        <?php $__currentLoopData = $successMetrics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $successMetric): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/12e7f710d432d09795dceccc1048a21507239172.php	/^                                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/13e320cf20e451e55f14d9038bc6bc160e0323c1.php	/^            <?php $__currentLoopData = $clients; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/14fdaf1de3d994d44b3ecc2fe4da761953085443.php	/^            <?php $__currentLoopData = $clients; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
@@ -917,12 +917,15 @@ __currentLoopData	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8
 __currentLoopData	storage/framework/views/2f23ec0833092c36d0f149754f424eaa36345cd5.php	/^                    <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/3883f732386b7949bb91702a28c6cd43902471d0.php	/^        <?php $__currentLoopData = $clientInfo->mediaPlans; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $mediaPlan): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/4390a2d3c0eea9b039cf6ccca69164626788e28c.php	/^                                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/6193194ae689e4ffa1412f3e421ab8734f5e5b6f.php	/^                            <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/7e40bf8cd956708b0156244f31d66700435ff07d.php	/^                <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                                <?php $__currentLoopData = App\\Client::all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                                <?php $__currentLoopData = App\\MediaPlan::with('client')->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $mediaPlan): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/9957a88a5562819a034241675c128f52153057c8.php	/^                        <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                        <?php $__currentLoopData = $clientList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/ab11bfea9249e1d6a9c6f3d7705d3d8de5cc4824.php	/^                <?php $__currentLoopData = $mediaPlans; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $mediaPlan): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                                    <?php $__currentLoopData = $rfp->adUnits; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $adUnit): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                                    <?php $__currentLoopData = $rfp->successMetrics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $successMetric): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                <?php $__currentLoopData = $rfp->proposals; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $proposal): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __webpack_require__	public/js/app.js	/^\/******\/ 	function __webpack_require__(moduleId) {$/;"	f
 __webpack_require__.d	public/js/app.js	/^\/******\/ 	__webpack_require__.d = function(exports, name, getter) {$/;"	f
@@ -1041,8 +1044,8 @@ accordion	public/plugins/jQueryUI/jquery-ui.js	/^var accordion = $.widget( "ui.a
 action	public/plugins/timepicker/bootstrap-timepicker.js	/^      var action = $(e.target).closest('a').data('action');$/;"	v
 adUnit	app/Http/Controllers/AdUnitsController.php	/^        $adUnit = AdUnit::create($request->all()); $/;"	v
 adUnits	app/ProposalRequest.php	/^    public function adUnits()$/;"	f
-adUnits	resources/views/ad_units/create.blade.php	/^                    $adUnits = App\\AdUnit::where('proposal_request_id', '=', $rfp )->get();$/;"	v
-adUnits	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^                    $adUnits = App\\AdUnit::where('proposal_request_id', '=', $rfp )->get();$/;"	v
+adUnits	resources/views/ad_units/create.blade.php	/^            $adUnits = App\\AdUnit::where('proposal_request_id', '=', $rfp )->get();$/;"	v
+adUnits	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^            $adUnits = App\\AdUnit::where('proposal_request_id', '=', $rfp )->get();$/;"	v
 addClass	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  function addClass(el, cssClass, regExp) {$/;"	f
 addClassMethods.align_img	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^    align_img: (function() {$/;"	p
 addFile	app/Http/Controllers/ProposalRequestsController.php	/^    public function addFile($mediaPlan, $proposalRequest, Request $request)$/;"	f
@@ -1939,10 +1942,9 @@ locale_locales__getSetGlobalLocale	public/plugins/daterangepicker/moment.js	/^  
 locale_opts	public/plugins/datepicker/bootstrap-datepicker.js	/^	var locale_opts = $.fn.datepicker.locale_opts = [$/;"	v
 lockCrosshair	public/plugins/flot/jquery.flot.crosshair.js	/^        plot.lockCrosshair = function lockCrosshair(pos) {$/;"	f
 lookupColors.aqua	public/plugins/flot/jquery.colorhelpers.js	/^        aqua:[0,255,255],$/;"	p
-loop	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^									<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
-loop	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
+loop	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
+loop	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/04dbcf7d521ea86aac108a746e7f4c941df7009f.php	/^                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
-loop	storage/framework/views/12e7f710d432d09795dceccc1048a21507239172.php	/^									<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/12e7f710d432d09795dceccc1048a21507239172.php	/^                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/13e320cf20e451e55f14d9038bc6bc160e0323c1.php	/^            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/14fdaf1de3d994d44b3ecc2fe4da761953085443.php	/^            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
@@ -1950,11 +1952,13 @@ loop	storage/framework/views/188a998addf86a35027ba84e5856c8cde061e8fa.php	/^    
 loop	storage/framework/views/2f23ec0833092c36d0f149754f424eaa36345cd5.php	/^                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/3883f732386b7949bb91702a28c6cd43902471d0.php	/^        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/4390a2d3c0eea9b039cf6ccca69164626788e28c.php	/^                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
+loop	storage/framework/views/6193194ae689e4ffa1412f3e421ab8734f5e5b6f.php	/^                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/7e40bf8cd956708b0156244f31d66700435ff07d.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/87a3dc3def3fe753c6a63ecd412675969f920c07.php	/^                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/9957a88a5562819a034241675c128f52153057c8.php	/^                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/ab11bfea9249e1d6a9c6f3d7705d3d8de5cc4824.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
+loop	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 m	public/plugins/ckeditor/ckeditor.js	/^(d=CKEDITOR.tools.indexOf(g.groups,d),0<=d)){g.groups.splice(d+1,0,a);return}h?g.groups.splice(0,0,a):g.groups.push(a);return}d=null}d&&(d=CKEDITOR.tools.indexOf(c,function(a){return a.name==d}));h?c.splice(0,0,a):"number"==typeof d?c.splice(d+1,0,b):c.push(a)}})();CKEDITOR.UI_SEPARATOR="separator";CKEDITOR.config.toolbarLocation="top";(function(){function q(a,d){function l(c){c=k.list[c];if(c.equals(a.editable())||"true"==c.getAttribute("contenteditable")){var e=a.createRange();e.selectNodeContents(c);e.select()}else a.getSelection().selectElement(c);a.focus()}function m(){n&&n.setHtml('\\x3cspan class\\x3d"cke_path_empty"\\x3e\\x26nbsp;\\x3c\/span\\x3e');delete k.list}var p=a.ui.spaceId("path"),n,k=a._.elementsPath,q=k.idBase;d.html+='\\x3cspan id\\x3d"'+p+'_label" class\\x3d"cke_voice_label"\\x3e'+a.lang.elementspath.eleLabel+'\\x3c\/span\\x3e\\x3cspan id\\x3d"'+$/;"	f
 makeFormatFunction	public/plugins/daterangepicker/moment.js	/^    function makeFormatFunction(format) {$/;"	f
@@ -1991,9 +1995,14 @@ matchTimestamp	public/plugins/daterangepicker/moment.js	/^    var matchTimestamp
 matchUnsigned	public/plugins/daterangepicker/moment.js	/^    var matchUnsigned  = \/\\d+\/;           \/\/       0 - inf$/;"	v
 max	public/plugins/bootstrap-slider/bootstrap-slider.js	/^					var max = Math.log(this.options.max);$/;"	v
 measureTickLabels	public/plugins/flot/jquery.flot.js	/^        function measureTickLabels(axis) {$/;"	f
+mediaPlan	app/Http/Controllers/MediaPlansController.php	/^        $mediaPlan = MediaPlan::create([$/;"	v
 mediaPlan	app/Http/Controllers/ProposalRequestsController.php	/^        $mediaPlan = MediaPlan::fromTitle($title);$/;"	v
 mediaPlan	app/ProposalRequest.php	/^        $mediaPlan = MediaPlan::fromTitle($mediaPlan);$/;"	v
 mediaPlan	app/ProposalRequest.php	/^    public function mediaPlan()$/;"	f
+mediaPlan	resources/views/success_metrics/create.blade.php	/^                    $mediaPlan = $mediaPlan->title;$/;"	v
+mediaPlan	resources/views/success_metrics/create.blade.php	/^                    $mediaPlan = App\\MediaPlan::find($pr->media_plan_id);$/;"	v
+mediaPlan	storage/framework/views/12e7f710d432d09795dceccc1048a21507239172.php	/^                    $mediaPlan = $mediaPlan->title;$/;"	v
+mediaPlan	storage/framework/views/12e7f710d432d09795dceccc1048a21507239172.php	/^                    $mediaPlan = App\\MediaPlan::find($pr->media_plan_id);$/;"	v
 mediaPlans	app/Client.php	/^    public function mediaPlans()$/;"	f
 mediaPlans	app/Http/Controllers/MediaPlansController.php	/^       $mediaPlans = MediaPlan::with('client')->get();$/;"	v
 media_plan	app/SuccessMetric.php	/^    public function media_plan()$/;"	f
@@ -2231,7 +2240,7 @@ return.toString	public/plugins/daterangepicker/moment.js	/^        return Object
 return.toString	public/plugins/daterangepicker/moment.js	/^        return input instanceof Date || Object.prototype.toString.call(input) === '[object Date]';$/;"	m
 return.tokenize	public/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js	/^next:{name:"arguments"}};k.lex=!0;return{startState:function(a){a={tokenize:w,lastType:"sof",cc:[],lexical:new ca((a||0)-C,0,"block",!1),localVars:t.localVars,context:t.localVars&&{vars:t.localVars},indented:0};t.globalVars&&"object"==typeof t.globalVars&&(a.globalVars=t.globalVars);return a},token:function(a,b){a.sol()&&(b.lexical.hasOwnProperty("align")||(b.lexical.align=!1),b.indented=a.indentation(),S(a,b));if(b.tokenize!=J&&a.eatSpace())return null;var e=b.tokenize(a,b);if("comment"==E)return e;$/;"	p
 rfp	app/Http/Controllers/AdUnitsController.php	/^        $rfp = ProposalRequest::find($id)->id;$/;"	v
-rfp	app/Http/Controllers/ProposalRequestsController.php	/^        $rfp=ProposalRequest::planInfo($mediaPlan, $proposalRequest);$/;"	v
+rfp	app/Http/Controllers/ProposalRequestsController.php	/^        $rfp=ProposalRequest::planInfo($mediaPlan, $proposalRequest)->with('client', 'adUnits', 'successMetrics')->find($proposalRequest);$/;"	v
 rgba	public/plugins/jQueryUI/jquery-ui.js	/^		rgba: {$/;"	p
 role	app/Http/Controllers/UsersController.php	/^        $role = $user->roles[0]->display_name;$/;"	v
 role	app/Http/Controllers/UsersController.php	/^        $role = Role::where('name', $user->role)->get()->first();$/;"	v
