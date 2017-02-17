@@ -28,6 +28,7 @@ class MediaPlan extends Model
 
     public static function fromTitle($title)
     {
+        $title = strtolower(str_replace('_', ' ', $title));
         return static::where(compact('title'))->with('client')->first();
 
     }

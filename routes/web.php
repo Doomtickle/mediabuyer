@@ -58,6 +58,11 @@ Route::group(['middleware' => 'auth'], function () {
     
     //  Ad Units
     Route::post('/ad_units', 'AdUnitsController@store');
+
+    //Budget Proposal
+    
+   Route::get('/{mediaPlan}/budget_proposal/create', 'BudgetProposalsController@create');
+    Route::post('/budget_proposals', 'BudgetProposalsController@store');
     
     
 
