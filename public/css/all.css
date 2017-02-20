@@ -7787,6 +7787,16 @@ label {
   color: #000 !important;
 }
 
+table {
+  max-width: 100%;
+}
+
+.media-plan-buttons {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+}
+
 /*# sourceMappingURL=app.css.map */
 
 /*

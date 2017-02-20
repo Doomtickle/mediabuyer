@@ -16,7 +16,7 @@
                         <div class="box-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                        </div>314074269
+                        </div>
                         <!-- /.box-tools -->
                     </div>
                     <!-- /.box-header -->
@@ -26,24 +26,26 @@
                         <p>Media Plan: {{ $mediaPlan->title }}</p>
                         <form action="/budget_proposals" method="post">
                             {{ csrf_field() }}
-                                <table id="budget_proposal_table" class="display" cellspacing="0" width="100%">
+                                <table id="budget_proposal_table" class="display table-responsive" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
+                                            <th>ID</th>
                                             <th>Market</th>
                                             <th>Broadcast Radio</th>
                                             <th>Broadcast Cable TV</th>
                                             <th>Digital TV (Hulu)</th>
                                             <th>Digital Radio (Pandora)</th>
                                             <th>Digital Radio (Spotify)</th>
-                                            <th>Digital Radio (iHeart)</th>
-                                            <th>Digital Geofencing</th>
+                                            <th>Digital Radio (iHeart)</th> <th>Digital Geofencing</th>
                                             <th>Google Text &amp; Display</th>
                                             <th>Youtube &amp; Google Video</th>
                                             <th>Market Split</th>
+                                            <th>Options</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <th>ID</th>
                                             <th>Market</th>
                                             <th>Broadcast Radio</th>
                                             <th>Broadcast Cable TV</th>
@@ -55,6 +57,7 @@
                                             <th>Google Text &amp; Display</th>
                                             <th>Youtube &amp; Google Video</th>
                                             <th>Market Split</th>
+                                            <th>Options</th>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -74,33 +77,53 @@
     <script>
 		$(document).ready(function(){
 			var counter = 0; 
-			var table = $('#budget_proposal_table').DataTable();
+			var table = $('#budget_proposal_table').DataTable({
+                "paging": false,
+                "searching": false,
+                //This will disable the inputs of the previous row upon new row creation
+                "createdRow": function ( row, data, index ){
+                    $('td', (row - 1)).find("input").attr("disabled", "disabled");
+                    $('td', (row-1)).find($(".edit-btn")).attr("disabled", false);
+                },
+                "columnDefs": [{
+                    "targets": -1,
+                    "data": null,
+                    "defaultContent": "<a class=\"btn btn-warning\">Edit</a>"
+                }]
+            });
+            $('#budget_proposal_table tbody').on( 'click', 'a', function () {
+                var data = table.row( $(this).parents('tr') ).data();
+                alert(data[0]);
+            });
 
 			$('#addRow').on( 'click', function () {
 
                 if (counter > 0 ){
                     $('#submit').click();
                 }
-                    table.row.add( [
-                        '<td><input type="text" name="market" placeholder="Enter the Region"></td>',
-                        '<td><input type="text" name="broadcast_radio" placeholder="Amount"></td>',
-                        '<td><input type="text" name="broadcast_cable_tv" placeholder="Amount"></td>',
-                        '<td><input type="text" name="digital_tv_hulu" placeholder="Amount"></td>',
-                        '<td><input type="text" name="digital_radio_pandora" placeholder="Amount"></td>',
-                        '<td><input type="text" name="digital_radio_spotify" placeholder="Amount"></td>',
-                        '<td><input type="text" name="digital_radio_iheart" placeholder="Amount"></td>',
-                        '<td><input type="text" name="digital_geofencing" placeholder="Amount"></td>',
-                        '<td><input type="text" name="digital_google_text_and_display" placeholder="Amount"></td>',
-                        '<td><input type="text" name="digital_youtube_and_google_video" placeholder="Amount"></td>',
-                        '<td><input type="text" name="market_split" placeholder="Amount"></td>',
-                        '</form>'
-                    ]).draw( false );
+                table.row.add( [
+                    //for the ID
+                    '<span id="budget_proposal_' + (counter + 1) + '_id"></span>',
+                    '<input type="text" name="market" placeholder="Enter the Region">',
+                    '<input type="text" name="broadcast_radio" placeholder="Amount">',
+                    '<input type="text" name="broadcast_cable_tv" placeholder="Amount">',
+                    '<input type="text" name="digital_tv_hulu" placeholder="Amount">',
+                    '<input type="text" name="digital_radio_pandora" placeholder="Amount">',
+                    '<input type="text" name="digital_radio_spotify" placeholder="Amount">',
+                    '<input type="text" name="digital_radio_iheart" placeholder="Amount">',
+                    '<input type="text" name="digital_geofencing" placeholder="Amount">',
+                    '<input type="text" name="digital_google_text_and_display" placeholder="Amount">',
+                    '<input type="text" name="digital_youtube_and_google_video" placeholder="Amount">',
+                    '<input type="text" name="market_split" placeholder="Amount">',
+                    '</form>'
+                ]).draw( false );
 
-                    counter++;
+                counter++;
 			});
  
 			// Automatically add a first row of data
             $('#addRow').click();
+
 
             $('#submit').on( 'click', function(e){
 
@@ -123,10 +146,7 @@
                     url: myurl,
                     data: formdata, 
                     success: function (data) {
-                        {{--$('.table').append("<tr><td>" + data.type + "</td><td>" + data.size + "</td><td>" + data.description + "</td></tr>");--}}
-                        {{--$('#adUnits').each(function(){--}}
-                            {{--this.reset();--}}
-                        {{--});--}}
+                        $('#budget_proposal_' + (counter - 1)  + '_id').html(data.id);
                         console.log(data);
                     },
                     error: function (xhr, ajaxOptions, thrownError) {

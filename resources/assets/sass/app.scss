@@ -8,7 +8,8 @@
 //Ionicons
 @import "node_modules/ionicons/dist/scss/ionicons.scss";
 
-//Font awesome
+//Font awesome 
+
 @import "node_modules/font-awesome/scss/font-awesome.scss";
 
 .icheckbox_square-blue.checked {
@@ -41,4 +42,11 @@ label{
 }
 .form-control{
     color:#000 !important;
+}
+table{
+    max-width:100%;
+}
+.media-plan-buttons{
+    display: flex;
+    justify-content: space-around;
 }

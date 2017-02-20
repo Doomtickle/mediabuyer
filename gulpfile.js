@@ -15,7 +15,7 @@ require('laravel-elixir-vue-2');
 
 elixir(function(mix) {
     //app.scss includes app css, Boostrap and Ionicons
-    mix.sass('app.scss')
+    mix.sass('resources/assets/sass/app.scss')
         .less('./node_modules/admin-lte/build/less/AdminLTE.less', './public/css/adminlte-less.css')
         .less('adminlte-app.less')
         .less('./node_modules/toastr/toastr.less')
