@@ -1,7 +1,7 @@
 @extends('adminlte::page')
 
 @section('htmlheader_title')
-	Change Title here!
+    Create a new budget proposal
 @endsection
 
 
@@ -9,7 +9,6 @@
 	<div class="container-fluid spark-screen">
 		<div class="row">
 			<div class="col-md-12">
-
 				<div class="box box-primary box-solid">
                     <div class="box-header with-border">
                         <h3 class="box-title">Budget Proposal Worksheet</h3>
@@ -67,7 +66,6 @@
                     </div>
                     <!-- /.box-body -->
                 </div>
-
 			</div>
 		</div>
 	</div>
