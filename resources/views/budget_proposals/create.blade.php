@@ -86,12 +86,14 @@
                 "columnDefs": [{
                     "targets": -1,
                     "data": null,
-                    "defaultContent": "<a class=\"btn btn-warning\">Edit</a>"
+                    "defaultContent": "<a id=\"row_" +counter + "_edit\" class=\"btn btn-warning\">Edit</a>"
                 }]
             });
             $('#budget_proposal_table tbody').on( 'click', 'a', function () {
-                var data = table.row( $(this).parents('tr') ).data();
-                alert(data[0]);
+
+                
+                var data = table.row( $(this).parents('tr td span') );
+                console.log(data);
             });
 
 			$('#addRow').on( 'click', function () {
