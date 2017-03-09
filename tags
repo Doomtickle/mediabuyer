@@ -73,6 +73,7 @@ AcachaAdminLTELaravelTest	tests/AcachaAdminLTELaravelTest.php	/^class AcachaAdmi
 AdUnit	app/AdUnit.php	/^class AdUnit extends Model$/;"	c
 AdUnitsController	app/Http/Controllers/AdUnitsController.php	/^class AdUnitsController extends Controller$/;"	c
 AddCommissionToClients	database/migrations/2017_03_09_204026_add_commission_to_clients.php	/^class AddCommissionToClients extends Migration$/;"	c
+AddContactsController	app/Http/Controllers/AddContactsController.php	/^class AddContactsController extends Controller$/;"	c
 Api	public/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js	/^var Api = $.fn.dataTable.Api;$/;"	v
 AppServiceProvider	app/Providers/AppServiceProvider.php	/^class AppServiceProvider extends ServiceProvider$/;"	c
 Array.isArray	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  Array.isArray = function(arg) {$/;"	f
@@ -1058,6 +1059,8 @@ adUnits	resources/views/ad_units/create.blade.php	/^            $adUnits = App\\
 adUnits	storage/framework/views/01000aa8d1415cd3935cc7fe557198cd771b9fbc.php	/^            $adUnits = App\\AdUnit::where('proposal_request_id', '=', $rfp )->get();$/;"	v
 addClass	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  function addClass(el, cssClass, regExp) {$/;"	f
 addClassMethods.align_img	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^    align_img: (function() {$/;"	p
+addClientContact	app/Client.php	/^    public function addClientContact(ClientContact $contact)    $/;"	f
+addContact	app/Http/Controllers/AddContactsController.php	/^    public function addContact(Request $request, $name)$/;"	f
 addFile	app/Http/Controllers/ProposalRequestsController.php	/^    public function addFile($mediaPlan, $proposalRequest, Request $request)$/;"	f
 addFormatToken	public/plugins/daterangepicker/moment.js	/^    function addFormatToken (token, padded, ordinal, callback) {$/;"	f
 addProposal	app/ProposalRequest.php	/^    public function addProposal(Proposal $proposal)$/;"	f
@@ -1256,6 +1259,8 @@ configureFlashOutput	public/plugins/ckeditor/samples/old/htmlwriter/outputforfla
 configureHtmlWriter	public/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html	/^				function configureHtmlWriter( evt ) {$/;"	f
 configureTransformations	public/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html	/^				function configureTransformations( evt ) {$/;"	f
 constructor	public/plugins/jQueryUI/jquery-ui.js	/^	constructor.prototype = $.widget.extend( basePrototype, {$/;"	c
+contact	app/Http/Controllers/AddContactsController.php	/^        $contact = ClientContact::create($request->all());$/;"	v
+contacts	app/Client.php	/^    public function contacts()$/;"	f
 copy	public/plugins/knob/jquery.knob.js	/^        this.copy = function (f, t) {$/;"	f
 copyConfig	public/plugins/daterangepicker/moment.js	/^    function copyConfig(to, from) {$/;"	f
 create	app/Http/Controllers/AdUnitsController.php	/^    public function create($id)$/;"	f
