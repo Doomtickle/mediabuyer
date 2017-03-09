@@ -72,6 +72,7 @@ A.v	public/plugins/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobje
 AcachaAdminLTELaravelTest	tests/AcachaAdminLTELaravelTest.php	/^class AcachaAdminLTELaravelTest extends BrowserKitTest$/;"	c
 AdUnit	app/AdUnit.php	/^class AdUnit extends Model$/;"	c
 AdUnitsController	app/Http/Controllers/AdUnitsController.php	/^class AdUnitsController extends Controller$/;"	c
+AddCommissionToClients	database/migrations/2017_03_09_204026_add_commission_to_clients.php	/^class AddCommissionToClients extends Migration$/;"	c
 Api	public/plugins/datatables/extensions/Responsive/js/dataTables.responsive.js	/^var Api = $.fn.dataTable.Api;$/;"	v
 AppServiceProvider	app/Providers/AppServiceProvider.php	/^class AppServiceProvider extends ServiceProvider$/;"	c
 Array.isArray	public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js	/^  Array.isArray = function(arg) {$/;"	f
@@ -1427,6 +1428,7 @@ down	database/migrations/2017_02_01_154919_create_proposal_requests_table.php	/^
 down	database/migrations/2017_02_07_165708_create_ad_units_table.php	/^    public function down()$/;"	f
 down	database/migrations/2017_02_08_225833_create_success_metrics_table.php	/^    public function down()$/;"	f
 down	database/migrations/2017_02_11_233321_create_budget_proposals_table.php	/^    public function down()$/;"	f
+down	database/migrations/2017_03_09_204026_add_commission_to_clients.php	/^    public function down()$/;"	f
 down	storage/framework/views/f65aa23b5ad2474bbbf85ba0f45831dceec5e700.php	/^    public function down()$/;"	f
 downAnim.opacity	public/plugins/jQueryUI/jquery-ui.js	/^		downAnim = { opacity: 1 };$/;"	p
 draggable	public/plugins/jQueryUI/jquery-ui.js	/^var draggable = $.ui.draggable;$/;"	v
@@ -2495,6 +2497,7 @@ up	database/migrations/2017_02_01_154919_create_proposal_requests_table.php	/^  
 up	database/migrations/2017_02_07_165708_create_ad_units_table.php	/^    public function up()$/;"	f
 up	database/migrations/2017_02_08_225833_create_success_metrics_table.php	/^    public function up()$/;"	f
 up	database/migrations/2017_02_11_233321_create_budget_proposals_table.php	/^    public function up()$/;"	f
+up	database/migrations/2017_03_09_204026_add_commission_to_clients.php	/^    public function up()$/;"	f
 up	storage/framework/views/f65aa23b5ad2474bbbf85ba0f45831dceec5e700.php	/^    public function up()$/;"	f
 upAnim.opacity	public/plugins/jQueryUI/jquery-ui.js	/^		upAnim = { opacity: 0 };$/;"	p
 update	app/Http/Controllers/AdUnitsController.php	/^    public function update(Request $request, $id)$/;"	f

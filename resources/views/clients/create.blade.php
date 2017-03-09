@@ -28,6 +28,10 @@
                         <label for="clientIndustry">Industry</label>
                         <input type="text" name="clientIndustry" class="form-control" id="clientIndustry" value="{{ old('clientIndustry') }}">
                     </div>
+                    <div class="form-group">
+                        <label for="commision">Commission Rate(as a percentage)</label>
+                        <input type="text" name="commission" class="form-control" id="commission" value="{{ old('commission') }}">
+                    </div>
                    <div class="form-group">
                        <button type="submit" class="btn btn-primary">Submit</button>
                    </div>

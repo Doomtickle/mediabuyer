@@ -40,10 +40,15 @@ class ClientsController extends Controller
 
         $this->validate($request, [
             'name' => 'required | unique:clients',
-            'clientIndustry' => 'required'
+            'clientIndustry' => 'required',
+            'commission' => 'required|numeric'
         ]);
 
-        Client::create(['name' => $request->name, 'clientIndustry' => $request->clientIndustry]);
+        Client::create([
+            'name' => $request->name, 
+            'clientIndustry' => $request->clientIndustry, 
+            'commission' => $request->commission
+        ]);
 
         return redirect()->route('home');
     }

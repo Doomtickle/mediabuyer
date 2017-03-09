@@ -16,9 +16,10 @@
                 {{ csrf_field() }}
                 {{ method_field('delete') }}
                 <div class="form-group">
-                    <button type="submit" class="btn btn-danger">Delete this client</button>
+                    <button type="submit" class="btn btn-danger disabled">Delete this client</button>
                 </div>
             </form>
+            <a href="/clients/{{$clientInfo->name }}/edit" class="btn btn-info">Edit this client</a>
 		</div>
         <hr>
         @foreach($clientInfo->mediaPlans as $mediaPlan)
