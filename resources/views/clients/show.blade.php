@@ -41,5 +41,6 @@
                 </div>
             </div>
         @endforeach
+        @include('partials.addClientContact')
     </div>
 @endsection

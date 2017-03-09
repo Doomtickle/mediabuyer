@@ -74,6 +74,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/user/{user}', 'UsersController@show');
     Route::post('/users', 'UsersController@store');
 
+
+    Route::post('clients/{name}/contact', 'AddContactController@addContact');
+
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
 });

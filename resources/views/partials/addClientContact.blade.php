@@ -12,7 +12,7 @@
 @endif
 <div class="collapse" id="addContact">
     <div class="well">
-        <form id="addContactForm" action="/client_list/{{ $client->name }}/contacts"
+        <form id="addContactForm" action="/clients/{{ $clientInfo->name }}/contacts"
               method="POST"
               style="margin-bottom:50px;">
             {{ csrf_field() }}

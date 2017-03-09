@@ -473,6 +473,7 @@ Chart.computeDimension	public/plugins/chartjs/Chart.js	/^		var computeDimension 
 Chart.defaults.global	public/plugins/chartjs/Chart.js	/^		global: {$/;"	p
 CheckDirty	public/plugins/ckeditor/samples/old/api.html	/^function CheckDirty() {$/;"	f
 Client	app/Client.php	/^class Client extends Model$/;"	c
+ClientContact	app/ClientContact.php	/^class ClientContact extends Model$/;"	c
 ClientsController	app/Http/Controllers/ClientsController.php	/^class ClientsController extends Controller$/;"	c
 ColReorder	public/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js	/^ColReorder.prototype = {$/;"	c
 ColReorder._fnConstruct	public/plugins/datatables/extensions/ColReorder/js/dataTables.colReorder.js	/^	"_fnConstruct": function ()$/;"	m
@@ -563,6 +564,7 @@ Colorpicker.updatePicker	public/plugins/colorpicker/bootstrap-colorpicker.js	/^ 
 Controller	app/Http/Controllers/Controller.php	/^class Controller extends BaseController$/;"	c
 CreateAdUnitsTable	database/migrations/2017_02_07_165708_create_ad_units_table.php	/^class CreateAdUnitsTable extends Migration$/;"	c
 CreateBudgetProposalsTable	database/migrations/2017_02_11_233321_create_budget_proposals_table.php	/^class CreateBudgetProposalsTable extends Migration$/;"	c
+CreateClientContactsTable	database/migrations/2017_03_09_215103_create_client_contacts_table.php	/^class CreateClientContactsTable extends Migration$/;"	c
 CreateClientsTable	database/migrations/2017_01_28_002709_create_clients_table.php	/^class CreateClientsTable extends Migration$/;"	c
 CreateMediaPlansTable	database/migrations/2017_01_28_035518_create_media_plans_table.php	/^class CreateMediaPlansTable extends Migration$/;"	c
 CreatePasswordResetsTable	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^class CreatePasswordResetsTable extends Migration$/;"	c
@@ -931,6 +933,7 @@ __currentLoopData	storage/framework/views/9a765232e691e57c9835f0091d7778bb901521
 __currentLoopData	storage/framework/views/9a765232e691e57c9835f0091d7778bb901521f3.php	/^<?php $__currentLoopData = $outroLines; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $line): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                        <?php $__currentLoopData = $clientList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/ab11bfea9249e1d6a9c6f3d7705d3d8de5cc4824.php	/^                <?php $__currentLoopData = $mediaPlans; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $mediaPlan): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
+__currentLoopData	storage/framework/views/b3359cfab7f483e834733f62f68df3c2553f54df.php	/^            <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                                    <?php $__currentLoopData = $rfp->adUnits; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $adUnit): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                                    <?php $__currentLoopData = $rfp->successMetrics; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $successMetric): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
 __currentLoopData	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                <?php $__currentLoopData = $rfp->proposals; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $proposal): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>$/;"	v
@@ -1218,6 +1221,7 @@ clearOptionalTail	public/plugins/input-mask/jquery.inputmask.js	/^            fu
 clearSelection	public/plugins/flot/jquery.flot.selection.js	/^        function clearSelection(preventEvent) {$/;"	f
 clickBusy	public/plugins/ckeditor/plugins/wsc/dialogs/wsc.js	/^setOptionsConfirmF:function(){},setOptionsConfirmT:function(){r.setValue("")},clickBusy:function(){a.div_overlay.setEnable()},suggestAllCame:function(){a.div_overlay.setDisable();a.div_overlay_no_check.setDisable()},TextCorrect:function(){w(a.langList)}},G=function(a){a=a||window.event;if((a=window.JSON.parse(a.data))&&a.id)O[a.id](a)},E=function(b,c,e,d){c=c||CKEDITOR.config.wsc_cmd;e=e||a.dataTemp;g.postMessage.send({message:{customerId:a.wsc_customerId,text:e,txt_ctrl:a.TextAreaNumber,cmd:c,cust_dic_ids:a.cust_dic_ids,$/;"	m
 client	app/BudgetProposal.php	/^    public function client()$/;"	f
+client	app/ClientContact.php	/^    public function client()$/;"	f
 client	app/Http/Controllers/MediaPlansController.php	/^        $client = Client::fromId($plan->client_id);$/;"	v
 client	app/Http/Controllers/MediaPlansController.php	/^        $client = Client::fromName($name);$/;"	v
 client	app/MediaPlan.php	/^    public function client()$/;"	f
@@ -1429,6 +1433,7 @@ down	database/migrations/2017_02_07_165708_create_ad_units_table.php	/^    publi
 down	database/migrations/2017_02_08_225833_create_success_metrics_table.php	/^    public function down()$/;"	f
 down	database/migrations/2017_02_11_233321_create_budget_proposals_table.php	/^    public function down()$/;"	f
 down	database/migrations/2017_03_09_204026_add_commission_to_clients.php	/^    public function down()$/;"	f
+down	database/migrations/2017_03_09_215103_create_client_contacts_table.php	/^    public function down()$/;"	f
 down	storage/framework/views/f65aa23b5ad2474bbbf85ba0f45831dceec5e700.php	/^    public function down()$/;"	f
 downAnim.opacity	public/plugins/jQueryUI/jquery-ui.js	/^		downAnim = { opacity: 1 };$/;"	p
 draggable	public/plugins/jQueryUI/jquery-ui.js	/^var draggable = $.ui.draggable;$/;"	v
@@ -1579,6 +1584,7 @@ file	bootstrap/autoload.php	/^| compiled class file which contains all of the cl
 fillInSeriesOptions	public/plugins/flot/jquery.flot.js	/^        function fillInSeriesOptions() {$/;"	f
 fillable	app/AdUnit.php	/^    protected $fillable = [$/;"	v
 fillable	app/BudgetProposal.php	/^    protected $fillable = [$/;"	v
+fillable	app/ClientContact.php	/^    protected $fillable = [$/;"	v
 fillable	app/Proposal.php	/^    protected $fillable = ['path', 'user_id'];$/;"	v
 fillable	app/ProposalRequest.php	/^    protected $fillable = [$/;"	v
 fillable	app/SuccessMetric.php	/^    protected $fillable = [$/;"	v
@@ -1981,6 +1987,7 @@ loop	storage/framework/views/9957a88a5562819a034241675c128f52153057c8.php	/^    
 loop	storage/framework/views/9a765232e691e57c9835f0091d7778bb901521f3.php	/^<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/aabe6c4cadea66b0ad5f824faf0c6e5276708629.php	/^                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/ab11bfea9249e1d6a9c6f3d7705d3d8de5cc4824.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
+loop	storage/framework/views/b3359cfab7f483e834733f62f68df3c2553f54df.php	/^            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 loop	storage/framework/views/b60faf2e6c281993b4ff9e6282646b6f391085f5.php	/^                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>$/;"	v
 m	public/plugins/ckeditor/ckeditor.js	/^(d=CKEDITOR.tools.indexOf(g.groups,d),0<=d)){g.groups.splice(d+1,0,a);return}h?g.groups.splice(0,0,a):g.groups.push(a);return}d=null}d&&(d=CKEDITOR.tools.indexOf(c,function(a){return a.name==d}));h?c.splice(0,0,a):"number"==typeof d?c.splice(d+1,0,b):c.push(a)}})();CKEDITOR.UI_SEPARATOR="separator";CKEDITOR.config.toolbarLocation="top";(function(){function q(a,d){function l(c){c=k.list[c];if(c.equals(a.editable())||"true"==c.getAttribute("contenteditable")){var e=a.createRange();e.selectNodeContents(c);e.select()}else a.getSelection().selectElement(c);a.focus()}function m(){n&&n.setHtml('\\x3cspan class\\x3d"cke_path_empty"\\x3e\\x26nbsp;\\x3c\/span\\x3e');delete k.list}var p=a.ui.spaceId("path"),n,k=a._.elementsPath,q=k.idBase;d.html+='\\x3cspan id\\x3d"'+p+'_label" class\\x3d"cke_voice_label"\\x3e'+a.lang.elementspath.eleLabel+'\\x3c\/span\\x3e\\x3cspan id\\x3d"'+$/;"	f
@@ -2498,6 +2505,7 @@ up	database/migrations/2017_02_07_165708_create_ad_units_table.php	/^    public 
 up	database/migrations/2017_02_08_225833_create_success_metrics_table.php	/^    public function up()$/;"	f
 up	database/migrations/2017_02_11_233321_create_budget_proposals_table.php	/^    public function up()$/;"	f
 up	database/migrations/2017_03_09_204026_add_commission_to_clients.php	/^    public function up()$/;"	f
+up	database/migrations/2017_03_09_215103_create_client_contacts_table.php	/^    public function up()$/;"	f
 up	storage/framework/views/f65aa23b5ad2474bbbf85ba0f45831dceec5e700.php	/^    public function up()$/;"	f
 upAnim.opacity	public/plugins/jQueryUI/jquery-ui.js	/^		upAnim = { opacity: 0 };$/;"	p
 update	app/Http/Controllers/AdUnitsController.php	/^    public function update(Request $request, $id)$/;"	f
